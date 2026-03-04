@@ -398,9 +398,10 @@ async function main(){
   const bootStats = boot?.stats || { count: 0, p50: 0, p90: 0, byModel: {} };
   const bootEvents = boot?.events || [];
 
+  const bootDiag = boot?.diagnostics || { newCommandsInWindow: 0, mapped: 0, noCandidateFiles: 0, noAssistantAfter: 0 };
   document.getElementById('bootSummary').innerHTML = bootStats.count
-    ? `<strong>${formatInt(bootStats.count)}</strong> /new events found · p50 <strong>${formatInt(bootStats.p50)}</strong> tok · p90 <strong>${formatInt(bootStats.p90)}</strong> tok`
-    : `No /new events detected in the last ${meta.windowDays} days (or could not map them to usage).`;
+    ? `<strong>${formatInt(bootStats.count)}</strong> mapped /new events (of ${formatInt(bootDiag.newCommandsInWindow)}) · p50 <strong>${formatInt(bootStats.p50)}</strong> tok · p90 <strong>${formatInt(bootStats.p90)}</strong> tok <span class="muted">(unmapped: ${formatInt(bootDiag.noCandidateFiles + bootDiag.noAssistantAfter)})</span>`
+    : `No /new events mapped in the last ${meta.windowDays} days. Found ${formatInt(bootDiag.newCommandsInWindow)} /new events, but none were mappable to usage.`;
 
   const bootRows = Object.entries(bootStats.byModel || {})
     .sort((a,b)=>(b[1].p50||0)-(a[1].p50||0))

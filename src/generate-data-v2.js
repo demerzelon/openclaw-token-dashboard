@@ -242,7 +242,7 @@ function estimateSessionBootCosts(){
   const activity = readJsonLines(activityPath);
   const newCmds = activity.filter(e => e?.type === 'command' && e?.action === 'new' && e?.status === 'success');
 
-  // Pre-index session files by agent + topic
+  // Pre-index session files by agent (and by agent+topic when present)
   const sessionsRoot = path.join(OPENCLAW_DIR, 'agents');
   const sessionFiles = listFilesRecursive(sessionsRoot, {
     exts: ['.jsonl'],
@@ -250,49 +250,70 @@ function estimateSessionBootCosts(){
     include: (p)=>p.includes(`${path.sep}sessions${path.sep}`)
   });
 
-  const index = new Map(); // key: agent|topic -> [files]
+  const byAgent = new Map();      // agent -> [files]
+  const byAgentTopic = new Map(); // agent|topic -> [files]
+
   for (const f of sessionFiles){
-    // .../agents/<agent>/sessions/<uuid>-topic-38.jsonl (or .jsonl.reset...)
     const parts = f.split(path.sep);
     const ai = parts.lastIndexOf('agents');
     const agent = ai>=0 ? parts[ai+1] : 'unknown';
+
+    const arrA = byAgent.get(agent) || [];
+    arrA.push(f);
+    byAgent.set(agent, arrA);
+
     const m = f.match(/topic-(\d+)\.jsonl/);
     const topic = m ? m[1] : null;
-    if (!topic) continue;
-    const key = `${agent}|${topic}`;
-    const arr = index.get(key) || [];
-    arr.push(f);
-    index.set(key, arr);
+    if (topic){
+      const key = `${agent}|${topic}`;
+      const arrT = byAgentTopic.get(key) || [];
+      arrT.push(f);
+      byAgentTopic.set(key, arrT);
+    }
   }
-  for (const [k, arr] of index.entries()){
-    // sort newest first by mtime
+
+  function sortNewestFirst(arr){
     arr.sort((a,b)=>{
       try { return fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs; } catch { return 0; }
     });
-    index.set(k, arr);
   }
+  for (const arr of byAgent.values()) sortNewestFirst(arr);
+  for (const arr of byAgentTopic.values()) sortNewestFirst(arr);
 
   const results = [];
+
+  const diag = {
+    newCommandsInWindow: 0,
+    mapped: 0,
+    noCandidateFiles: 0,
+    noAssistantAfter: 0
+  };
 
   for (const cmd of newCmds){
     const day = isoDate(cmd.ts);
     if (!day || !daysSet.has(day)) continue;
+    diag.newCommandsInWindow += 1;
 
     const sessionKey = cmd.sessionKey || '';
     const agentMatch = sessionKey.match(/^agent:([^:]+)/);
     const agent = agentMatch ? agentMatch[1] : 'unknown';
     const topicMatch = sessionKey.match(/topic:(\d+)/);
     const topic = topicMatch ? topicMatch[1] : null;
-    if (!topic) continue;
-
-    const files = index.get(`${agent}|${topic}`) || [];
-    if (!files.length) continue;
 
     const cmdTime = new Date(cmd.ts).getTime();
 
+    // Prefer agent+topic, else fall back to all sessions for that agent
+    const files = topic
+      ? (byAgentTopic.get(`${agent}|${topic}`) || byAgent.get(agent) || [])
+      : (byAgent.get(agent) || []);
+
+    if (!files.length){
+      diag.noCandidateFiles += 1;
+      continue;
+    }
+
     // Find first assistant message after cmd.ts across candidate files (newest-first)
     let boot = null;
-    let chosen = null;
     for (const candidate of files){
       let events;
       try { events = readJsonLines(candidate); } catch { continue; }
@@ -308,19 +329,22 @@ function estimateSessionBootCosts(){
         const total = usage?.totalTokens || 0;
         if (!total) continue;
         const model = evt?.model || evt?.message?.model || 'unknown';
-        boot = { totalTokens: total, model, at: evt.timestamp };
-        chosen = candidate;
+        boot = { totalTokens: total, model };
         break;
       }
       if (boot) break;
     }
 
-    if (!boot) continue;
+    if (!boot){
+      diag.noAssistantAfter += 1;
+      continue;
+    }
 
+    diag.mapped += 1;
     results.push({
       day,
       agent,
-      topic: Number(topic),
+      topic: topic ? Number(topic) : null,
       sessionKey,
       commandAtMs: cmd.ts,
       model: boot.model,
@@ -361,7 +385,7 @@ function estimateSessionBootCosts(){
     byModel: statsByModel
   };
 
-  return { events: results, stats };
+  return { events: results, stats, diagnostics: diag };
 }
 
 function writeJson(rel, obj){

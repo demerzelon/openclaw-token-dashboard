@@ -2,21 +2,21 @@
   "name": "token-dashboard",
   "path": "/workspaces/token-dashboard",
   "type": "dir",
-  "sizeBytes": 2504851,
+  "sizeBytes": 2505389,
   "tokenEst": 22122,
   "children": [
     {
       "name": "data",
       "path": "/workspaces/token-dashboard/data",
       "type": "dir",
-      "sizeBytes": 2450704,
+      "sizeBytes": 2450706,
       "tokenEst": 21837,
       "children": [
         {
           "name": "workspace_tree",
           "path": "/workspaces/token-dashboard/data/workspace_tree",
           "type": "dir",
-          "sizeBytes": 2439873,
+          "sizeBytes": 2439875,
           "tokenEst": 19127,
           "children": [
             {
@@ -44,7 +44,7 @@
               "name": "token-dashboard.json",
               "path": "/workspaces/token-dashboard/data/workspace_tree/token-dashboard.json",
               "type": "file",
-              "sizeBytes": 7306,
+              "sizeBytes": 7308,
               "tokenEst": 1827
             },
             {
@@ -181,14 +181,14 @@
       "name": "src",
       "path": "/workspaces/token-dashboard/src",
       "type": "dir",
-      "sizeBytes": 22087,
+      "sizeBytes": 22623,
       "tokenEst": 0,
       "children": [
         {
           "name": "generate-data-v2.js",
           "path": "/workspaces/token-dashboard/src/generate-data-v2.js",
           "type": "file",
-          "sizeBytes": 13173,
+          "sizeBytes": 13709,
           "tokenEst": null
         },
         {
