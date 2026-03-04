@@ -1,0 +1,576 @@
+{
+  "name": "missioncontrol",
+  "path": "/workspaces/missioncontrol",
+  "type": "dir",
+  "sizeBytes": 17999455,
+  "tokenEst": 33212,
+  "children": [
+    {
+      "name": "memory",
+      "path": "/workspaces/missioncontrol/memory",
+      "type": "dir",
+      "sizeBytes": 58506,
+      "tokenEst": 14564,
+      "children": [
+        {
+          "name": "archive",
+          "path": "/workspaces/missioncontrol/memory/archive",
+          "type": "dir",
+          "sizeBytes": 12632,
+          "tokenEst": 3143,
+          "children": [
+            {
+              "name": "2026-02-12-system-audit.md",
+              "path": "/workspaces/missioncontrol/memory/archive/2026-02-12-system-audit.md",
+              "type": "file",
+              "sizeBytes": 6728,
+              "tokenEst": 1668
+            },
+            {
+              "name": "2026-02-13.md",
+              "path": "/workspaces/missioncontrol/memory/archive/2026-02-13.md",
+              "type": "file",
+              "sizeBytes": 2027,
+              "tokenEst": 507
+            },
+            {
+              "name": "2026-02-06-mc-ping.md",
+              "path": "/workspaces/missioncontrol/memory/archive/2026-02-06-mc-ping.md",
+              "type": "file",
+              "sizeBytes": 1401,
+              "tokenEst": 348
+            },
+            {
+              "name": "2026-02-11.md",
+              "path": "/workspaces/missioncontrol/memory/archive/2026-02-11.md",
+              "type": "file",
+              "sizeBytes": 968,
+              "tokenEst": 242
+            },
+            {
+              "name": "2026-02-12.md",
+              "path": "/workspaces/missioncontrol/memory/archive/2026-02-12.md",
+              "type": "file",
+              "sizeBytes": 672,
+              "tokenEst": 168
+            },
+            {
+              "name": "2026-02-14.md",
+              "path": "/workspaces/missioncontrol/memory/archive/2026-02-14.md",
+              "type": "file",
+              "sizeBytes": 652,
+              "tokenEst": 163
+            },
+            {
+              "name": "2026-02-19.md",
+              "path": "/workspaces/missioncontrol/memory/archive/2026-02-19.md",
+              "type": "file",
+              "sizeBytes": 119,
+              "tokenEst": 30
+            },
+            {
+              "name": "2026-02-02.md",
+              "path": "/workspaces/missioncontrol/memory/archive/2026-02-02.md",
+              "type": "file",
+              "sizeBytes": 65,
+              "tokenEst": 17
+            }
+          ]
+        },
+        {
+          "name": "reference",
+          "path": "/workspaces/missioncontrol/memory/reference",
+          "type": "dir",
+          "sizeBytes": 8997,
+          "tokenEst": 2248,
+          "children": [
+            {
+              "name": "skills.md",
+              "path": "/workspaces/missioncontrol/memory/reference/skills.md",
+              "type": "file",
+              "sizeBytes": 4753,
+              "tokenEst": 1189
+            },
+            {
+              "name": "lessons.md",
+              "path": "/workspaces/missioncontrol/memory/reference/lessons.md",
+              "type": "file",
+              "sizeBytes": 2740,
+              "tokenEst": 683
+            },
+            {
+              "name": "model-routing.md",
+              "path": "/workspaces/missioncontrol/memory/reference/model-routing.md",
+              "type": "file",
+              "sizeBytes": 1504,
+              "tokenEst": 376
+            }
+          ]
+        },
+        {
+          "name": "daily",
+          "path": "/workspaces/missioncontrol/memory/daily",
+          "type": "dir",
+          "sizeBytes": 2406,
+          "tokenEst": 599,
+          "children": [
+            {
+              "name": "2026-03-01.md",
+              "path": "/workspaces/missioncontrol/memory/daily/2026-03-01.md",
+              "type": "file",
+              "sizeBytes": 2146,
+              "tokenEst": 535
+            },
+            {
+              "name": "2026-03-02.md",
+              "path": "/workspaces/missioncontrol/memory/daily/2026-03-02.md",
+              "type": "file",
+              "sizeBytes": 107,
+              "tokenEst": 26
+            },
+            {
+              "name": "2026-03-04.md",
+              "path": "/workspaces/missioncontrol/memory/daily/2026-03-04.md",
+              "type": "file",
+              "sizeBytes": 106,
+              "tokenEst": 26
+            },
+            {
+              "name": "2026-03-03.md",
+              "path": "/workspaces/missioncontrol/memory/daily/2026-03-03.md",
+              "type": "file",
+              "sizeBytes": 47,
+              "tokenEst": 12
+            }
+          ]
+        },
+        {
+          "name": "meetings",
+          "path": "/workspaces/missioncontrol/memory/meetings",
+          "type": "dir",
+          "sizeBytes": 1328,
+          "tokenEst": 330,
+          "children": [
+            {
+              "name": "2026-02-11-meeting-schedule.md",
+              "path": "/workspaces/missioncontrol/memory/meetings/2026-02-11-meeting-schedule.md",
+              "type": "file",
+              "sizeBytes": 1328,
+              "tokenEst": 330
+            }
+          ]
+        },
+        {
+          "name": "projects",
+          "path": "/workspaces/missioncontrol/memory/projects",
+          "type": "dir",
+          "sizeBytes": 249,
+          "tokenEst": 63,
+          "children": [
+            {
+              "name": "missioncontrol.md",
+              "path": "/workspaces/missioncontrol/memory/projects/missioncontrol.md",
+              "type": "file",
+              "sizeBytes": 249,
+              "tokenEst": 63
+            }
+          ]
+        },
+        {
+          "name": "2026-02-14-access-matrix.md",
+          "path": "/workspaces/missioncontrol/memory/2026-02-14-access-matrix.md",
+          "type": "file",
+          "sizeBytes": 16768,
+          "tokenEst": 4156
+        },
+        {
+          "name": "active-tasks.md",
+          "path": "/workspaces/missioncontrol/memory/active-tasks.md",
+          "type": "file",
+          "sizeBytes": 8641,
+          "tokenEst": 2161
+        },
+        {
+          "name": "2026-02-15-system-review.md",
+          "path": "/workspaces/missioncontrol/memory/2026-02-15-system-review.md",
+          "type": "file",
+          "sizeBytes": 3730,
+          "tokenEst": 929
+        },
+        {
+          "name": "INDEX.md",
+          "path": "/workspaces/missioncontrol/memory/INDEX.md",
+          "type": "file",
+          "sizeBytes": 1496,
+          "tokenEst": 373
+        },
+        {
+          "name": "WORKING.md",
+          "path": "/workspaces/missioncontrol/memory/WORKING.md",
+          "type": "file",
+          "sizeBytes": 960,
+          "tokenEst": 236
+        },
+        {
+          "name": "2026-02-13.md",
+          "path": "/workspaces/missioncontrol/memory/2026-02-13.md",
+          "type": "file",
+          "sizeBytes": 913,
+          "tokenEst": 228
+        },
+        {
+          "name": "2026-02-23-2048.md",
+          "path": "/workspaces/missioncontrol/memory/2026-02-23-2048.md",
+          "type": "file",
+          "sizeBytes": 193,
+          "tokenEst": 49
+        },
+        {
+          "name": "2026-02-23-2051.md",
+          "path": "/workspaces/missioncontrol/memory/2026-02-23-2051.md",
+          "type": "file",
+          "sizeBytes": 193,
+          "tokenEst": 49
+        }
+      ]
+    },
+    {
+      "name": "reports",
+      "path": "/workspaces/missioncontrol/reports",
+      "type": "dir",
+      "sizeBytes": 17892506,
+      "tokenEst": 8233,
+      "children": [
+        {
+          "name": "tmp",
+          "path": "/workspaces/missioncontrol/reports/tmp",
+          "type": "dir",
+          "sizeBytes": 17859551,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "video-transcript.txt",
+              "path": "/workspaces/missioncontrol/reports/tmp/video-transcript.txt",
+              "type": "file",
+              "sizeBytes": 0,
+              "tokenEst": 0
+            },
+            {
+              "name": "video.en.vtt",
+              "path": "/workspaces/missioncontrol/reports/tmp/video.en.vtt",
+              "type": "file",
+              "sizeBytes": 270003,
+              "tokenEst": null
+            },
+            {
+              "name": "video.mp3",
+              "path": "/workspaces/missioncontrol/reports/tmp/video.mp3",
+              "type": "file",
+              "sizeBytes": 17589548,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "video-transcript-clean.txt",
+          "path": "/workspaces/missioncontrol/reports/video-transcript-clean.txt",
+          "type": "file",
+          "sizeBytes": 28671,
+          "tokenEst": 7168
+        },
+        {
+          "name": "video-triage-2026-02-13.md",
+          "path": "/workspaces/missioncontrol/reports/video-triage-2026-02-13.md",
+          "type": "file",
+          "sizeBytes": 4284,
+          "tokenEst": 1065
+        }
+      ]
+    },
+    {
+      "name": "rag-memory-local",
+      "path": "/workspaces/missioncontrol/rag-memory-local",
+      "type": "dir",
+      "sizeBytes": 4188,
+      "tokenEst": 428,
+      "children": [
+        {
+          "name": "embeddings",
+          "path": "/workspaces/missioncontrol/rag-memory-local/embeddings",
+          "type": "dir",
+          "sizeBytes": 1184,
+          "tokenEst": 22,
+          "children": [
+            {
+              "name": "requirements.txt",
+              "path": "/workspaces/missioncontrol/rag-memory-local/embeddings/requirements.txt",
+              "type": "file",
+              "sizeBytes": 85,
+              "tokenEst": 22
+            },
+            {
+              "name": "Dockerfile",
+              "path": "/workspaces/missioncontrol/rag-memory-local/embeddings/Dockerfile",
+              "type": "file",
+              "sizeBytes": 451,
+              "tokenEst": null
+            },
+            {
+              "name": "app.py",
+              "path": "/workspaces/missioncontrol/rag-memory-local/embeddings/app.py",
+              "type": "file",
+              "sizeBytes": 648,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "db",
+          "path": "/workspaces/missioncontrol/rag-memory-local/db",
+          "type": "dir",
+          "sizeBytes": 0,
+          "tokenEst": 0,
+          "children": []
+        },
+        {
+          "name": "sql",
+          "path": "/workspaces/missioncontrol/rag-memory-local/sql",
+          "type": "dir",
+          "sizeBytes": 1320,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "001_schema.sql",
+              "path": "/workspaces/missioncontrol/rag-memory-local/sql/001_schema.sql",
+              "type": "file",
+              "sizeBytes": 1320,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "path": "/workspaces/missioncontrol/rag-memory-local/README.md",
+          "type": "file",
+          "sizeBytes": 834,
+          "tokenEst": 209
+        },
+        {
+          "name": "docker-compose.yml",
+          "path": "/workspaces/missioncontrol/rag-memory-local/docker-compose.yml",
+          "type": "file",
+          "sizeBytes": 788,
+          "tokenEst": 197
+        },
+        {
+          "name": ".gitignore",
+          "path": "/workspaces/missioncontrol/rag-memory-local/.gitignore",
+          "type": "file",
+          "sizeBytes": 62,
+          "tokenEst": null
+        }
+      ]
+    },
+    {
+      "name": "scripts",
+      "path": "/workspaces/missioncontrol/scripts",
+      "type": "dir",
+      "sizeBytes": 4713,
+      "tokenEst": 186,
+      "children": [
+        {
+          "name": "session-checklist.md",
+          "path": "/workspaces/missioncontrol/scripts/session-checklist.md",
+          "type": "file",
+          "sizeBytes": 748,
+          "tokenEst": 186
+        },
+        {
+          "name": "session-memory-init.sh",
+          "path": "/workspaces/missioncontrol/scripts/session-memory-init.sh",
+          "type": "file",
+          "sizeBytes": 1387,
+          "tokenEst": null
+        },
+        {
+          "name": "validate-architecture.sh",
+          "path": "/workspaces/missioncontrol/scripts/validate-architecture.sh",
+          "type": "file",
+          "sizeBytes": 2578,
+          "tokenEst": null
+        }
+      ]
+    },
+    {
+      "name": ".openclaw",
+      "path": "/workspaces/missioncontrol/.openclaw",
+      "type": "dir",
+      "sizeBytes": 70,
+      "tokenEst": 18,
+      "children": [
+        {
+          "name": "workspace-state.json",
+          "path": "/workspaces/missioncontrol/.openclaw/workspace-state.json",
+          "type": "file",
+          "sizeBytes": 70,
+          "tokenEst": 18
+        }
+      ]
+    },
+    {
+      "name": "config",
+      "path": "/workspaces/missioncontrol/config",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "README.md",
+      "path": "/workspaces/missioncontrol/README.md",
+      "type": "file",
+      "sizeBytes": 5042,
+      "tokenEst": 1242
+    },
+    {
+      "name": "DECISIONS.md",
+      "path": "/workspaces/missioncontrol/DECISIONS.md",
+      "type": "file",
+      "sizeBytes": 3805,
+      "tokenEst": 950
+    },
+    {
+      "name": "CRON_MAP.md",
+      "path": "/workspaces/missioncontrol/CRON_MAP.md",
+      "type": "file",
+      "sizeBytes": 3591,
+      "tokenEst": 896
+    },
+    {
+      "name": "SYSTEM_AUDIT_2026-02-11.md",
+      "path": "/workspaces/missioncontrol/SYSTEM_AUDIT_2026-02-11.md",
+      "type": "file",
+      "sizeBytes": 3483,
+      "tokenEst": 870
+    },
+    {
+      "name": "ACCESS_MATRIX.md",
+      "path": "/workspaces/missioncontrol/ACCESS_MATRIX.md",
+      "type": "file",
+      "sizeBytes": 2914,
+      "tokenEst": 729
+    },
+    {
+      "name": "AGENT_DIRECTORY.md",
+      "path": "/workspaces/missioncontrol/AGENT_DIRECTORY.md",
+      "type": "file",
+      "sizeBytes": 2949,
+      "tokenEst": 729
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/missioncontrol/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 2532,
+      "tokenEst": 632
+    },
+    {
+      "name": "RUNBOOK_MODEL_SECURITY.md",
+      "path": "/workspaces/missioncontrol/RUNBOOK_MODEL_SECURITY.md",
+      "type": "file",
+      "sizeBytes": 2322,
+      "tokenEst": 578
+    },
+    {
+      "name": "TASKS.md",
+      "path": "/workspaces/missioncontrol/TASKS.md",
+      "type": "file",
+      "sizeBytes": 2122,
+      "tokenEst": 531
+    },
+    {
+      "name": "RUNBOOK_SUBAGENTS.md",
+      "path": "/workspaces/missioncontrol/RUNBOOK_SUBAGENTS.md",
+      "type": "file",
+      "sizeBytes": 1675,
+      "tokenEst": 419
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/missioncontrol/USER.md",
+      "type": "file",
+      "sizeBytes": 1547,
+      "tokenEst": 387
+    },
+    {
+      "name": "AGENT_MAP.md",
+      "path": "/workspaces/missioncontrol/AGENT_MAP.md",
+      "type": "file",
+      "sizeBytes": 1537,
+      "tokenEst": 385
+    },
+    {
+      "name": "TELEGRAM_ROUTING.md",
+      "path": "/workspaces/missioncontrol/TELEGRAM_ROUTING.md",
+      "type": "file",
+      "sizeBytes": 1296,
+      "tokenEst": 324
+    },
+    {
+      "name": "RUNBOOK_CRON_HEARTBEAT.md",
+      "path": "/workspaces/missioncontrol/RUNBOOK_CRON_HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 1185,
+      "tokenEst": 297
+    },
+    {
+      "name": "RUNBOOK_SKILL_ROUTING.md",
+      "path": "/workspaces/missioncontrol/RUNBOOK_SKILL_ROUTING.md",
+      "type": "file",
+      "sizeBytes": 1039,
+      "tokenEst": 260
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/missioncontrol/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 860,
+      "tokenEst": 213
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/missioncontrol/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 537,
+      "tokenEst": 133
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/missioncontrol/SOUL.md",
+      "type": "file",
+      "sizeBytes": 539,
+      "tokenEst": 133
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/missioncontrol/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 276,
+      "tokenEst": 69
+    },
+    {
+      "name": "BOOTSTRAP.md",
+      "path": "/workspaces/missioncontrol/BOOTSTRAP.md",
+      "type": "file",
+      "sizeBytes": 21,
+      "tokenEst": 6
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/missioncontrol/.gitignore",
+      "type": "file",
+      "sizeBytes": 200,
+      "tokenEst": null
+    }
+  ]
+}

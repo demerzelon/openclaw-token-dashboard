@@ -1,0 +1,65 @@
+{
+  "name": "summarizer",
+  "path": "/workspaces/summarizer",
+  "type": "dir",
+  "sizeBytes": 13222,
+  "tokenEst": 3265,
+  "children": [
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/summarizer/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 7869,
+      "tokenEst": 1952
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/summarizer/SOUL.md",
+      "type": "file",
+      "sizeBytes": 1673,
+      "tokenEst": 417
+    },
+    {
+      "name": "BOOTSTRAP.md",
+      "path": "/workspaces/summarizer/BOOTSTRAP.md",
+      "type": "file",
+      "sizeBytes": 1470,
+      "tokenEst": 363
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/summarizer/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 860,
+      "tokenEst": 213
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/summarizer/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 636,
+      "tokenEst": 159
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/summarizer/USER.md",
+      "type": "file",
+      "sizeBytes": 477,
+      "tokenEst": 119
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/summarizer/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 168,
+      "tokenEst": 42
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/summarizer/.gitignore",
+      "type": "file",
+      "sizeBytes": 69,
+      "tokenEst": null
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "name": "token-dashboard",
+  "path": "/workspaces/token-dashboard",
+  "type": "dir",
+  "sizeBytes": 8476511,
+  "tokenEst": 16091,
+  "children": [
+    {
+      "name": "data",
+      "path": "/workspaces/token-dashboard/data",
+      "type": "dir",
+      "sizeBytes": 8439798,
+      "tokenEst": 15832,
+      "children": [
+        {
+          "name": "workspace_tree",
+          "path": "/workspaces/token-dashboard/data/workspace_tree",
+          "type": "dir",
+          "sizeBytes": 2425241,
+          "tokenEst": 15468,
+          "children": [
+            {
+              "name": "missioncontrol.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/missioncontrol.json",
+              "type": "file",
+              "sizeBytes": 16594,
+              "tokenEst": 4149
+            },
+            {
+              "name": ".git.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/.git.json",
+              "type": "file",
+              "sizeBytes": 15232,
+              "tokenEst": 3808
+            },
+            {
+              "name": "planner.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/planner.json",
+              "type": "file",
+              "sizeBytes": 11915,
+              "tokenEst": 2979
+            },
+            {
+              "name": "antseed.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/antseed.json",
+              "type": "file",
+              "sizeBytes": 4097,
+              "tokenEst": 1025
+            },
+            {
+              "name": "skilllookup.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/skilllookup.json",
+              "type": "file",
+              "sizeBytes": 2780,
+              "tokenEst": 695
+            },
+            {
+              "name": "opsreports.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/opsreports.json",
+              "type": "file",
+              "sizeBytes": 2670,
+              "tokenEst": 668
+            },
+            {
+              "name": "executive-assistant.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/executive-assistant.json",
+              "type": "file",
+              "sizeBytes": 2542,
+              "tokenEst": 636
+            },
+            {
+              "name": "polymarket.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/polymarket.json",
+              "type": "file",
+              "sizeBytes": 1823,
+              "tokenEst": 456
+            },
+            {
+              "name": "scrapling.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/scrapling.json",
+              "type": "file",
+              "sizeBytes": 1645,
+              "tokenEst": 412
+            },
+            {
+              "name": "summarizer.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/summarizer.json",
+              "type": "file",
+              "sizeBytes": 1416,
+              "tokenEst": 354
+            },
+            {
+              "name": "researcher.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/researcher.json",
+              "type": "file",
+              "sizeBytes": 1144,
+              "tokenEst": 286
+            },
+            {
+              "name": "demrezel.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/demrezel.json",
+              "type": "file",
+              "sizeBytes": 2363383,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "usage_by_day_agent.json",
+          "path": "/workspaces/token-dashboard/data/usage_by_day_agent.json",
+          "type": "file",
+          "sizeBytes": 760,
+          "tokenEst": 190
+        },
+        {
+          "name": "usage_by_day_model.json",
+          "path": "/workspaces/token-dashboard/data/usage_by_day_model.json",
+          "type": "file",
+          "sizeBytes": 691,
+          "tokenEst": 173
+        },
+        {
+          "name": "cron_by_day_job.json",
+          "path": "/workspaces/token-dashboard/data/cron_by_day_job.json",
+          "type": "file",
+          "sizeBytes": 2,
+          "tokenEst": 1
+        },
+        {
+          "name": "context_tree.json",
+          "path": "/workspaces/token-dashboard/data/context_tree.json",
+          "type": "file",
+          "sizeBytes": 2910099,
+          "tokenEst": null
+        },
+        {
+          "name": "dashboard.json",
+          "path": "/workspaces/token-dashboard/data/dashboard.json",
+          "type": "file",
+          "sizeBytes": 3103005,
+          "tokenEst": null
+        }
+      ]
+    },
+    {
+      "name": "src",
+      "path": "/workspaces/token-dashboard/src",
+      "type": "dir",
+      "sizeBytes": 17839,
+      "tokenEst": 0,
+      "children": [
+        {
+          "name": "generate-data-v2.js",
+          "path": "/workspaces/token-dashboard/src/generate-data-v2.js",
+          "type": "file",
+          "sizeBytes": 8925,
+          "tokenEst": null
+        },
+        {
+          "name": "generate-data.js",
+          "path": "/workspaces/token-dashboard/src/generate-data.js",
+          "type": "file",
+          "sizeBytes": 8914,
+          "tokenEst": null
+        }
+      ]
+    },
+    {
+      "name": "README.md",
+      "path": "/workspaces/token-dashboard/README.md",
+      "type": "file",
+      "sizeBytes": 1040,
+      "tokenEst": 259
+    },
+    {
+      "name": "app-v2.js",
+      "path": "/workspaces/token-dashboard/app-v2.js",
+      "type": "file",
+      "sizeBytes": 7398,
+      "tokenEst": null
+    },
+    {
+      "name": "app.js",
+      "path": "/workspaces/token-dashboard/app.js",
+      "type": "file",
+      "sizeBytes": 6446,
+      "tokenEst": null
+    },
+    {
+      "name": "index.html",
+      "path": "/workspaces/token-dashboard/index.html",
+      "type": "file",
+      "sizeBytes": 1658,
+      "tokenEst": null
+    },
+    {
+      "name": "style.css",
+      "path": "/workspaces/token-dashboard/style.css",
+      "type": "file",
+      "sizeBytes": 2332,
+      "tokenEst": null
+    }
+  ]
+}

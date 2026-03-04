@@ -1,0 +1,120 @@
+{
+  "name": "skilllookup",
+  "path": "/workspaces/skilllookup",
+  "type": "dir",
+  "sizeBytes": 6161,
+  "tokenEst": 1507,
+  "children": [
+    {
+      "name": "memory",
+      "path": "/workspaces/skilllookup/memory",
+      "type": "dir",
+      "sizeBytes": 1175,
+      "tokenEst": 295,
+      "children": [
+        {
+          "name": "WORKING.md",
+          "path": "/workspaces/skilllookup/memory/WORKING.md",
+          "type": "file",
+          "sizeBytes": 565,
+          "tokenEst": 142
+        },
+        {
+          "name": "2026-02-10.md",
+          "path": "/workspaces/skilllookup/memory/2026-02-10.md",
+          "type": "file",
+          "sizeBytes": 548,
+          "tokenEst": 137
+        },
+        {
+          "name": "2026-02-02.md",
+          "path": "/workspaces/skilllookup/memory/2026-02-02.md",
+          "type": "file",
+          "sizeBytes": 62,
+          "tokenEst": 16
+        }
+      ]
+    },
+    {
+      "name": ".openclaw",
+      "path": "/workspaces/skilllookup/.openclaw",
+      "type": "dir",
+      "sizeBytes": 74,
+      "tokenEst": 19,
+      "children": [
+        {
+          "name": "workspace-state.json",
+          "path": "/workspaces/skilllookup/.openclaw/workspace-state.json",
+          "type": "file",
+          "sizeBytes": 74,
+          "tokenEst": 19
+        }
+      ]
+    },
+    {
+      "name": "config",
+      "path": "/workspaces/skilllookup/config",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "scripts",
+      "path": "/workspaces/skilllookup/scripts",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/skilllookup/SOUL.md",
+      "type": "file",
+      "sizeBytes": 1738,
+      "tokenEst": 428
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/skilllookup/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 948,
+      "tokenEst": 236
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/skilllookup/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 860,
+      "tokenEst": 213
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/skilllookup/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 617,
+      "tokenEst": 154
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/skilllookup/USER.md",
+      "type": "file",
+      "sizeBytes": 481,
+      "tokenEst": 120
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/skilllookup/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 168,
+      "tokenEst": 42
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/skilllookup/.gitignore",
+      "type": "file",
+      "sizeBytes": 100,
+      "tokenEst": null
+    }
+  ]
+}

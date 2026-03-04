@@ -1,0 +1,547 @@
+{
+  "name": ".git",
+  "path": "/workspaces/.git",
+  "type": "dir",
+  "sizeBytes": 30658,
+  "tokenEst": 0,
+  "children": [
+    {
+      "name": "hooks",
+      "path": "/workspaces/.git/hooks",
+      "type": "dir",
+      "sizeBytes": 23513,
+      "tokenEst": 0,
+      "children": [
+        {
+          "name": "applypatch-msg.sample",
+          "path": "/workspaces/.git/hooks/applypatch-msg.sample",
+          "type": "file",
+          "sizeBytes": 478,
+          "tokenEst": null
+        },
+        {
+          "name": "commit-msg.sample",
+          "path": "/workspaces/.git/hooks/commit-msg.sample",
+          "type": "file",
+          "sizeBytes": 896,
+          "tokenEst": null
+        },
+        {
+          "name": "fsmonitor-watchman.sample",
+          "path": "/workspaces/.git/hooks/fsmonitor-watchman.sample",
+          "type": "file",
+          "sizeBytes": 4726,
+          "tokenEst": null
+        },
+        {
+          "name": "post-update.sample",
+          "path": "/workspaces/.git/hooks/post-update.sample",
+          "type": "file",
+          "sizeBytes": 189,
+          "tokenEst": null
+        },
+        {
+          "name": "pre-applypatch.sample",
+          "path": "/workspaces/.git/hooks/pre-applypatch.sample",
+          "type": "file",
+          "sizeBytes": 424,
+          "tokenEst": null
+        },
+        {
+          "name": "pre-commit.sample",
+          "path": "/workspaces/.git/hooks/pre-commit.sample",
+          "type": "file",
+          "sizeBytes": 1643,
+          "tokenEst": null
+        },
+        {
+          "name": "pre-merge-commit.sample",
+          "path": "/workspaces/.git/hooks/pre-merge-commit.sample",
+          "type": "file",
+          "sizeBytes": 416,
+          "tokenEst": null
+        },
+        {
+          "name": "pre-push.sample",
+          "path": "/workspaces/.git/hooks/pre-push.sample",
+          "type": "file",
+          "sizeBytes": 1374,
+          "tokenEst": null
+        },
+        {
+          "name": "pre-rebase.sample",
+          "path": "/workspaces/.git/hooks/pre-rebase.sample",
+          "type": "file",
+          "sizeBytes": 4898,
+          "tokenEst": null
+        },
+        {
+          "name": "pre-receive.sample",
+          "path": "/workspaces/.git/hooks/pre-receive.sample",
+          "type": "file",
+          "sizeBytes": 544,
+          "tokenEst": null
+        },
+        {
+          "name": "prepare-commit-msg.sample",
+          "path": "/workspaces/.git/hooks/prepare-commit-msg.sample",
+          "type": "file",
+          "sizeBytes": 1492,
+          "tokenEst": null
+        },
+        {
+          "name": "push-to-checkout.sample",
+          "path": "/workspaces/.git/hooks/push-to-checkout.sample",
+          "type": "file",
+          "sizeBytes": 2783,
+          "tokenEst": null
+        },
+        {
+          "name": "update.sample",
+          "path": "/workspaces/.git/hooks/update.sample",
+          "type": "file",
+          "sizeBytes": 3650,
+          "tokenEst": null
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "path": "/workspaces/.git/info",
+      "type": "dir",
+      "sizeBytes": 240,
+      "tokenEst": 0,
+      "children": [
+        {
+          "name": "exclude",
+          "path": "/workspaces/.git/info/exclude",
+          "type": "file",
+          "sizeBytes": 240,
+          "tokenEst": null
+        }
+      ]
+    },
+    {
+      "name": "logs",
+      "path": "/workspaces/.git/logs",
+      "type": "dir",
+      "sizeBytes": 1178,
+      "tokenEst": 0,
+      "children": [
+        {
+          "name": "refs",
+          "path": "/workspaces/.git/logs/refs",
+          "type": "dir",
+          "sizeBytes": 589,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "heads",
+              "path": "/workspaces/.git/logs/refs/heads",
+              "type": "dir",
+              "sizeBytes": 589,
+              "tokenEst": 0,
+              "children": [
+                {
+                  "name": "main",
+                  "path": "/workspaces/.git/logs/refs/heads/main",
+                  "type": "file",
+                  "sizeBytes": 589,
+                  "tokenEst": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HEAD",
+          "path": "/workspaces/.git/logs/HEAD",
+          "type": "file",
+          "sizeBytes": 589,
+          "tokenEst": null
+        }
+      ]
+    },
+    {
+      "name": "objects",
+      "path": "/workspaces/.git/objects",
+      "type": "dir",
+      "sizeBytes": 3256,
+      "tokenEst": 0,
+      "children": [
+        {
+          "name": "06",
+          "path": "/workspaces/.git/objects/06",
+          "type": "dir",
+          "sizeBytes": 141,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "fc589c803fcce1e676810dd5c3ab76a27a25cd",
+              "path": "/workspaces/.git/objects/06/fc589c803fcce1e676810dd5c3ab76a27a25cd",
+              "type": "file",
+              "sizeBytes": 141,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "10",
+          "path": "/workspaces/.git/objects/10",
+          "type": "dir",
+          "sizeBytes": 155,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "47e0d86a097f2be57b3380da7d5fd474587712",
+              "path": "/workspaces/.git/objects/10/47e0d86a097f2be57b3380da7d5fd474587712",
+              "type": "file",
+              "sizeBytes": 155,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "32",
+          "path": "/workspaces/.git/objects/32",
+          "type": "dir",
+          "sizeBytes": 125,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "959e83626e1cddac90ddf7923b3ece2c6d633a",
+              "path": "/workspaces/.git/objects/32/959e83626e1cddac90ddf7923b3ece2c6d633a",
+              "type": "file",
+              "sizeBytes": 125,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "44",
+          "path": "/workspaces/.git/objects/44",
+          "type": "dir",
+          "sizeBytes": 104,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "a6c3c9b9db47e91332a95700312a32443f0e04",
+              "path": "/workspaces/.git/objects/44/a6c3c9b9db47e91332a95700312a32443f0e04",
+              "type": "file",
+              "sizeBytes": 104,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "5f",
+          "path": "/workspaces/.git/objects/5f",
+          "type": "dir",
+          "sizeBytes": 192,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "0bff4c9c23ac4481ee4554ca9757ef91db4d52",
+              "path": "/workspaces/.git/objects/5f/0bff4c9c23ac4481ee4554ca9757ef91db4d52",
+              "type": "file",
+              "sizeBytes": 192,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "79",
+          "path": "/workspaces/.git/objects/79",
+          "type": "dir",
+          "sizeBytes": 118,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "acbccb07477b1bd6c2060171f696ff258eec5e",
+              "path": "/workspaces/.git/objects/79/acbccb07477b1bd6c2060171f696ff258eec5e",
+              "type": "file",
+              "sizeBytes": 118,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "8a",
+          "path": "/workspaces/.git/objects/8a",
+          "type": "dir",
+          "sizeBytes": 55,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "721ae0e0ed169f36c59f88e94a556c9cf1da8f",
+              "path": "/workspaces/.git/objects/8a/721ae0e0ed169f36c59f88e94a556c9cf1da8f",
+              "type": "file",
+              "sizeBytes": 55,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "95",
+          "path": "/workspaces/.git/objects/95",
+          "type": "dir",
+          "sizeBytes": 84,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "0ea68898bcc816601ce8c28882dbf722e5e14a",
+              "path": "/workspaces/.git/objects/95/0ea68898bcc816601ce8c28882dbf722e5e14a",
+              "type": "file",
+              "sizeBytes": 84,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "99",
+          "path": "/workspaces/.git/objects/99",
+          "type": "dir",
+          "sizeBytes": 157,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "e3973d11d7c44403b778a4eb7f1eb83b834207",
+              "path": "/workspaces/.git/objects/99/e3973d11d7c44403b778a4eb7f1eb83b834207",
+              "type": "file",
+              "sizeBytes": 157,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "a2",
+          "path": "/workspaces/.git/objects/a2",
+          "type": "dir",
+          "sizeBytes": 222,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "55e3e1a01142029ac9e844d5c669b4e550c245",
+              "path": "/workspaces/.git/objects/a2/55e3e1a01142029ac9e844d5c669b4e550c245",
+              "type": "file",
+              "sizeBytes": 222,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "af",
+          "path": "/workspaces/.git/objects/af",
+          "type": "dir",
+          "sizeBytes": 187,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "e8e98fd7ee8e9ea70e0a467b7fa53d2e83b202",
+              "path": "/workspaces/.git/objects/af/e8e98fd7ee8e9ea70e0a467b7fa53d2e83b202",
+              "type": "file",
+              "sizeBytes": 187,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "c8",
+          "path": "/workspaces/.git/objects/c8",
+          "type": "dir",
+          "sizeBytes": 206,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "c88c6628a1ec2e6be32b4a7727c5e1285ab64d",
+              "path": "/workspaces/.git/objects/c8/c88c6628a1ec2e6be32b4a7727c5e1285ab64d",
+              "type": "file",
+              "sizeBytes": 206,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "c9",
+          "path": "/workspaces/.git/objects/c9",
+          "type": "dir",
+          "sizeBytes": 196,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "401715e9aa8584af864bd8ebc716924bf35d5a",
+              "path": "/workspaces/.git/objects/c9/401715e9aa8584af864bd8ebc716924bf35d5a",
+              "type": "file",
+              "sizeBytes": 196,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "d3",
+          "path": "/workspaces/.git/objects/d3",
+          "type": "dir",
+          "sizeBytes": 167,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "ef176aaa27f3341700619ace61b01a3efd78bd",
+              "path": "/workspaces/.git/objects/d3/ef176aaa27f3341700619ace61b01a3efd78bd",
+              "type": "file",
+              "sizeBytes": 167,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "d6",
+          "path": "/workspaces/.git/objects/d6",
+          "type": "dir",
+          "sizeBytes": 467,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "cbc6ed3edf43b65c7c16168b0ae2c7a525e8aa",
+              "path": "/workspaces/.git/objects/d6/cbc6ed3edf43b65c7c16168b0ae2c7a525e8aa",
+              "type": "file",
+              "sizeBytes": 467,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "dc",
+          "path": "/workspaces/.git/objects/dc",
+          "type": "dir",
+          "sizeBytes": 66,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "09c4821702dd924b019a58900f8b820cbab953",
+              "path": "/workspaces/.git/objects/dc/09c4821702dd924b019a58900f8b820cbab953",
+              "type": "file",
+              "sizeBytes": 66,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "e5",
+          "path": "/workspaces/.git/objects/e5",
+          "type": "dir",
+          "sizeBytes": 433,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "f4bd31b299d4ff054db99ea242bb9b8f80440c",
+              "path": "/workspaces/.git/objects/e5/f4bd31b299d4ff054db99ea242bb9b8f80440c",
+              "type": "file",
+              "sizeBytes": 433,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "f0",
+          "path": "/workspaces/.git/objects/f0",
+          "type": "dir",
+          "sizeBytes": 181,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "52fe7004f5c735801f7da841b4e3bda148f656",
+              "path": "/workspaces/.git/objects/f0/52fe7004f5c735801f7da841b4e3bda148f656",
+              "type": "file",
+              "sizeBytes": 181,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "info",
+          "path": "/workspaces/.git/objects/info",
+          "type": "dir",
+          "sizeBytes": 0,
+          "tokenEst": 0,
+          "children": []
+        },
+        {
+          "name": "pack",
+          "path": "/workspaces/.git/objects/pack",
+          "type": "dir",
+          "sizeBytes": 0,
+          "tokenEst": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "refs",
+      "path": "/workspaces/.git/refs",
+      "type": "dir",
+      "sizeBytes": 41,
+      "tokenEst": 0,
+      "children": [
+        {
+          "name": "heads",
+          "path": "/workspaces/.git/refs/heads",
+          "type": "dir",
+          "sizeBytes": 41,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "main",
+              "path": "/workspaces/.git/refs/heads/main",
+              "type": "file",
+              "sizeBytes": 41,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "tags",
+          "path": "/workspaces/.git/refs/tags",
+          "type": "dir",
+          "sizeBytes": 0,
+          "tokenEst": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "COMMIT_EDITMSG",
+      "path": "/workspaces/.git/COMMIT_EDITMSG",
+      "type": "file",
+      "sizeBytes": 35,
+      "tokenEst": null
+    },
+    {
+      "name": "HEAD",
+      "path": "/workspaces/.git/HEAD",
+      "type": "file",
+      "sizeBytes": 21,
+      "tokenEst": null
+    },
+    {
+      "name": "config",
+      "path": "/workspaces/.git/config",
+      "type": "file",
+      "sizeBytes": 1211,
+      "tokenEst": null
+    },
+    {
+      "name": "description",
+      "path": "/workspaces/.git/description",
+      "type": "file",
+      "sizeBytes": 73,
+      "tokenEst": null
+    },
+    {
+      "name": "index",
+      "path": "/workspaces/.git/index",
+      "type": "file",
+      "sizeBytes": 1090,
+      "tokenEst": null
+    }
+  ]
+}

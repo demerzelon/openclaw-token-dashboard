@@ -1,0 +1,201 @@
+{
+  "name": "writing-agent",
+  "path": "/workspaces/writing-agent",
+  "type": "dir",
+  "sizeBytes": 52899,
+  "tokenEst": 13085,
+  "children": [
+    {
+      "name": "skills",
+      "path": "/workspaces/writing-agent/skills",
+      "type": "dir",
+      "sizeBytes": 24694,
+      "tokenEst": 6155,
+      "children": [
+        {
+          "name": "humanizer",
+          "path": "/workspaces/writing-agent/skills/humanizer",
+          "type": "dir",
+          "sizeBytes": 21609,
+          "tokenEst": 5390,
+          "children": [
+            {
+              "name": "SKILL.md",
+              "path": "/workspaces/writing-agent/skills/humanizer/SKILL.md",
+              "type": "file",
+              "sizeBytes": 21609,
+              "tokenEst": 5390
+            }
+          ]
+        },
+        {
+          "name": "storytelling-frameworks",
+          "path": "/workspaces/writing-agent/skills/storytelling-frameworks",
+          "type": "dir",
+          "sizeBytes": 3085,
+          "tokenEst": 765,
+          "children": [
+            {
+              "name": "SKILL.md",
+              "path": "/workspaces/writing-agent/skills/storytelling-frameworks/SKILL.md",
+              "type": "file",
+              "sizeBytes": 3085,
+              "tokenEst": 765
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "style-sheet",
+      "path": "/workspaces/writing-agent/style-sheet",
+      "type": "dir",
+      "sizeBytes": 4372,
+      "tokenEst": 1067,
+      "children": [
+        {
+          "name": "STYLE-SHEET.md",
+          "path": "/workspaces/writing-agent/style-sheet/STYLE-SHEET.md",
+          "type": "file",
+          "sizeBytes": 4372,
+          "tokenEst": 1067
+        }
+      ]
+    },
+    {
+      "name": "ops",
+      "path": "/workspaces/writing-agent/ops",
+      "type": "dir",
+      "sizeBytes": 2324,
+      "tokenEst": 580,
+      "children": [
+        {
+          "name": "input-schema.md",
+          "path": "/workspaces/writing-agent/ops/input-schema.md",
+          "type": "file",
+          "sizeBytes": 1172,
+          "tokenEst": 292
+        },
+        {
+          "name": "article-lifecycle.md",
+          "path": "/workspaces/writing-agent/ops/article-lifecycle.md",
+          "type": "file",
+          "sizeBytes": 1152,
+          "tokenEst": 288
+        }
+      ]
+    },
+    {
+      "name": "templates",
+      "path": "/workspaces/writing-agent/templates",
+      "type": "dir",
+      "sizeBytes": 979,
+      "tokenEst": 243,
+      "children": [
+        {
+          "name": "meta.template.json",
+          "path": "/workspaces/writing-agent/templates/meta.template.json",
+          "type": "file",
+          "sizeBytes": 431,
+          "tokenEst": 108
+        },
+        {
+          "name": "output-template.md",
+          "path": "/workspaces/writing-agent/templates/output-template.md",
+          "type": "file",
+          "sizeBytes": 316,
+          "tokenEst": 77
+        },
+        {
+          "name": "input-template.md",
+          "path": "/workspaces/writing-agent/templates/input-template.md",
+          "type": "file",
+          "sizeBytes": 232,
+          "tokenEst": 58
+        }
+      ]
+    },
+    {
+      "name": "memory",
+      "path": "/workspaces/writing-agent/memory",
+      "type": "dir",
+      "sizeBytes": 709,
+      "tokenEst": 178,
+      "children": [
+        {
+          "name": "2026-02-14.md",
+          "path": "/workspaces/writing-agent/memory/2026-02-14.md",
+          "type": "file",
+          "sizeBytes": 709,
+          "tokenEst": 178
+        }
+      ]
+    },
+    {
+      "name": "articles",
+      "path": "/workspaces/writing-agent/articles",
+      "type": "dir",
+      "sizeBytes": 285,
+      "tokenEst": 72,
+      "children": [
+        {
+          "name": ".archive",
+          "path": "/workspaces/writing-agent/articles/.archive",
+          "type": "dir",
+          "sizeBytes": 0,
+          "tokenEst": 0,
+          "children": []
+        },
+        {
+          "name": "README.md",
+          "path": "/workspaces/writing-agent/articles/README.md",
+          "type": "file",
+          "sizeBytes": 285,
+          "tokenEst": 72
+        }
+      ]
+    },
+    {
+      "name": "TASKS.md",
+      "path": "/workspaces/writing-agent/TASKS.md",
+      "type": "file",
+      "sizeBytes": 6939,
+      "tokenEst": 1715
+    },
+    {
+      "name": "GHOSTWRITER-HANDOFF-2026-02-12.md",
+      "path": "/workspaces/writing-agent/GHOSTWRITER-HANDOFF-2026-02-12.md",
+      "type": "file",
+      "sizeBytes": 6342,
+      "tokenEst": 1555
+    },
+    {
+      "name": "PRD-10-80-10.md",
+      "path": "/workspaces/writing-agent/PRD-10-80-10.md",
+      "type": "file",
+      "sizeBytes": 3449,
+      "tokenEst": 846
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/writing-agent/SOUL.md",
+      "type": "file",
+      "sizeBytes": 2233,
+      "tokenEst": 556
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/writing-agent/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 473,
+      "tokenEst": 118
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/writing-agent/.gitignore",
+      "type": "file",
+      "sizeBytes": 100,
+      "tokenEst": null
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "name": "twitter",
+  "path": "/workspaces/twitter",
+  "type": "dir",
+  "sizeBytes": 21265,
+  "tokenEst": 5231,
+  "children": [
+    {
+      "name": "skills",
+      "path": "/workspaces/twitter/skills",
+      "type": "dir",
+      "sizeBytes": 1496,
+      "tokenEst": 374,
+      "children": [
+        {
+          "name": "xurl",
+          "path": "/workspaces/twitter/skills/xurl",
+          "type": "dir",
+          "sizeBytes": 1496,
+          "tokenEst": 374,
+          "children": [
+            {
+              "name": "SKILL.md",
+              "path": "/workspaces/twitter/skills/xurl/SKILL.md",
+              "type": "file",
+              "sizeBytes": 1496,
+              "tokenEst": 374
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "memory",
+      "path": "/workspaces/twitter/memory",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "STYLE.md",
+      "path": "/workspaces/twitter/STYLE.md",
+      "type": "file",
+      "sizeBytes": 16252,
+      "tokenEst": 4003
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/twitter/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 1146,
+      "tokenEst": 285
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/twitter/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 839,
+      "tokenEst": 210
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/twitter/SOUL.md",
+      "type": "file",
+      "sizeBytes": 817,
+      "tokenEst": 204
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/twitter/USER.md",
+      "type": "file",
+      "sizeBytes": 334,
+      "tokenEst": 84
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/twitter/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 141,
+      "tokenEst": 36
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/twitter/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 140,
+      "tokenEst": 35
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/twitter/.gitignore",
+      "type": "file",
+      "sizeBytes": 100,
+      "tokenEst": null
+    }
+  ]
+}

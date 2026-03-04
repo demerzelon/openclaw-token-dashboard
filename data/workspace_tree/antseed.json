@@ -1,0 +1,161 @@
+{
+  "name": "antseed",
+  "path": "/workspaces/antseed",
+  "type": "dir",
+  "sizeBytes": 15891,
+  "tokenEst": 2764,
+  "children": [
+    {
+      "name": "skills",
+      "path": "/workspaces/antseed/skills",
+      "type": "dir",
+      "sizeBytes": 10849,
+      "tokenEst": 1512,
+      "children": [
+        {
+          "name": "openclaw-antseed",
+          "path": "/workspaces/antseed/skills/openclaw-antseed",
+          "type": "dir",
+          "sizeBytes": 10849,
+          "tokenEst": 1512,
+          "children": [
+            {
+              "name": ".clawhub",
+              "path": "/workspaces/antseed/skills/openclaw-antseed/.clawhub",
+              "type": "dir",
+              "sizeBytes": 148,
+              "tokenEst": 37,
+              "children": [
+                {
+                  "name": "origin.json",
+                  "path": "/workspaces/antseed/skills/openclaw-antseed/.clawhub/origin.json",
+                  "type": "file",
+                  "sizeBytes": 148,
+                  "tokenEst": 37
+                }
+              ]
+            },
+            {
+              "name": "scripts",
+              "path": "/workspaces/antseed/skills/openclaw-antseed/scripts",
+              "type": "dir",
+              "sizeBytes": 4791,
+              "tokenEst": 0,
+              "children": [
+                {
+                  "name": "setup.sh",
+                  "path": "/workspaces/antseed/skills/openclaw-antseed/scripts/setup.sh",
+                  "type": "file",
+                  "sizeBytes": 4791,
+                  "tokenEst": null
+                }
+              ]
+            },
+            {
+              "name": "SKILL.md",
+              "path": "/workspaces/antseed/skills/openclaw-antseed/SKILL.md",
+              "type": "file",
+              "sizeBytes": 5775,
+              "tokenEst": 1441
+            },
+            {
+              "name": "_meta.json",
+              "path": "/workspaces/antseed/skills/openclaw-antseed/_meta.json",
+              "type": "file",
+              "sizeBytes": 135,
+              "tokenEst": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".openclaw",
+      "path": "/workspaces/antseed/.openclaw",
+      "type": "dir",
+      "sizeBytes": 70,
+      "tokenEst": 18,
+      "children": [
+        {
+          "name": "workspace-state.json",
+          "path": "/workspaces/antseed/.openclaw/workspace-state.json",
+          "type": "file",
+          "sizeBytes": 70,
+          "tokenEst": 18
+        }
+      ]
+    },
+    {
+      "name": "artifacts",
+      "path": "/workspaces/antseed/artifacts",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "memory",
+      "path": "/workspaces/antseed/memory",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "BOOTSTRAP.md",
+      "path": "/workspaces/antseed/BOOTSTRAP.md",
+      "type": "file",
+      "sizeBytes": 1470,
+      "tokenEst": 363
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/antseed/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 860,
+      "tokenEst": 213
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/antseed/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 636,
+      "tokenEst": 159
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/antseed/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 624,
+      "tokenEst": 156
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/antseed/SOUL.md",
+      "type": "file",
+      "sizeBytes": 558,
+      "tokenEst": 137
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/antseed/USER.md",
+      "type": "file",
+      "sizeBytes": 477,
+      "tokenEst": 119
+    },
+    {
+      "name": "MEMORY.md",
+      "path": "/workspaces/antseed/MEMORY.md",
+      "type": "file",
+      "sizeBytes": 179,
+      "tokenEst": 45
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/antseed/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 168,
+      "tokenEst": 42
+    }
+  ]
+}

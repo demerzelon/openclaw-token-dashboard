@@ -1,0 +1,104 @@
+{
+  "name": "executive-assistant",
+  "path": "/workspaces/executive-assistant",
+  "type": "dir",
+  "sizeBytes": 14658,
+  "tokenEst": 3549,
+  "children": [
+    {
+      "name": "memory",
+      "path": "/workspaces/executive-assistant/memory",
+      "type": "dir",
+      "sizeBytes": 10854,
+      "tokenEst": 2657,
+      "children": [
+        {
+          "name": "2026-02-16-0754.md",
+          "path": "/workspaces/executive-assistant/memory/2026-02-16-0754.md",
+          "type": "file",
+          "sizeBytes": 8910,
+          "tokenEst": 2171
+        },
+        {
+          "name": "2026-02-14.md",
+          "path": "/workspaces/executive-assistant/memory/2026-02-14.md",
+          "type": "file",
+          "sizeBytes": 1944,
+          "tokenEst": 486
+        }
+      ]
+    },
+    {
+      "name": ".openclaw",
+      "path": "/workspaces/executive-assistant/.openclaw",
+      "type": "dir",
+      "sizeBytes": 74,
+      "tokenEst": 19,
+      "children": [
+        {
+          "name": "workspace-state.json",
+          "path": "/workspaces/executive-assistant/.openclaw/workspace-state.json",
+          "type": "file",
+          "sizeBytes": 74,
+          "tokenEst": 19
+        }
+      ]
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/executive-assistant/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 1426,
+      "tokenEst": 356
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/executive-assistant/SOUL.md",
+      "type": "file",
+      "sizeBytes": 860,
+      "tokenEst": 215
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/executive-assistant/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 600,
+      "tokenEst": 150
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/executive-assistant/USER.md",
+      "type": "file",
+      "sizeBytes": 251,
+      "tokenEst": 63
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/executive-assistant/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 187,
+      "tokenEst": 47
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/executive-assistant/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 168,
+      "tokenEst": 42
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/executive-assistant/.gitignore",
+      "type": "file",
+      "sizeBytes": 100,
+      "tokenEst": null
+    },
+    {
+      "name": ".trello-env",
+      "path": "/workspaces/executive-assistant/.trello-env",
+      "type": "file",
+      "sizeBytes": 138,
+      "tokenEst": null
+    }
+  ]
+}

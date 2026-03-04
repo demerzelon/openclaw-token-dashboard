@@ -1,0 +1,252 @@
+[
+  {
+    "path": "/workspaces/demrezel/artifacts/temp/audit-metrics.json",
+    "tokenEst": 12858,
+    "sizeBytes": 51431
+  },
+  {
+    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/numpy-2.4.2.dist-info/licenses/LICENSE.txt",
+    "tokenEst": 11707,
+    "sizeBytes": 46826
+  },
+  {
+    "path": "/workspaces/planner/fb-rent-scout/package-lock.json",
+    "tokenEst": 8703,
+    "sizeBytes": 34809
+  },
+  {
+    "path": "/workspaces/missioncontrol/reports/video-transcript-clean.txt",
+    "tokenEst": 7168,
+    "sizeBytes": 28671
+  },
+  {
+    "path": "/workspaces/writing-agent/skills/humanizer/SKILL.md",
+    "tokenEst": 5390,
+    "sizeBytes": 21609
+  },
+  {
+    "path": "/workspaces/demrezel/memory/2026-02-06-fb-apartment-monitor.md",
+    "tokenEst": 4890,
+    "sizeBytes": 19936
+  },
+  {
+    "path": "/workspaces/planner/fb-rent-scout/DOCUMENTATION.md",
+    "tokenEst": 4487,
+    "sizeBytes": 19789
+  },
+  {
+    "path": "/workspaces/missioncontrol/memory/2026-02-14-access-matrix.md",
+    "tokenEst": 4156,
+    "sizeBytes": 16768
+  },
+  {
+    "path": "/workspaces/token-dashboard/data/workspace_tree/missioncontrol.json",
+    "tokenEst": 4149,
+    "sizeBytes": 16594
+  },
+  {
+    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/setuptools/config/setuptools.schema.json",
+    "tokenEst": 4018,
+    "sizeBytes": 16071
+  },
+  {
+    "path": "/workspaces/twitter/STYLE.md",
+    "tokenEst": 4003,
+    "sizeBytes": 16252
+  },
+  {
+    "path": "/workspaces/token-dashboard/data/workspace_tree/.git.json",
+    "tokenEst": 3808,
+    "sizeBytes": 15232
+  },
+  {
+    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+    "tokenEst": 3633,
+    "sizeBytes": 14531
+  },
+  {
+    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/pip/_vendor/distlib/LICENSE.txt",
+    "tokenEst": 3633,
+    "sizeBytes": 14531
+  },
+  {
+    "path": "/workspaces/demrezel/memory/2026-02-14-openclaw-tips.md",
+    "tokenEst": 3483,
+    "sizeBytes": 14027
+  },
+  {
+    "path": "/workspaces/demrezel/memory/2026-02-07-activity-feed.md",
+    "tokenEst": 3288,
+    "sizeBytes": 13546
+  },
+  {
+    "path": "/workspaces/token-dashboard/data/workspace_tree/planner.json",
+    "tokenEst": 2979,
+    "sizeBytes": 11915
+  },
+  {
+    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/pip-26.0.1.dist-info/licenses/AUTHORS.txt",
+    "tokenEst": 2911,
+    "sizeBytes": 11731
+  },
+  {
+    "path": "/workspaces/demrezel/AGENTS.md",
+    "tokenEst": 2796,
+    "sizeBytes": 11314
+  },
+  {
+    "path": "/workspaces/executive-assistant/memory/2026-02-16-0754.md",
+    "tokenEst": 2171,
+    "sizeBytes": 8910
+  },
+  {
+    "path": "/workspaces/missioncontrol/memory/active-tasks.md",
+    "tokenEst": 2161,
+    "sizeBytes": 8641
+  },
+  {
+    "path": "/workspaces/planner/fb-rent-scout/README.md",
+    "tokenEst": 1962,
+    "sizeBytes": 8512
+  },
+  {
+    "path": "/workspaces/summarizer/AGENTS.md",
+    "tokenEst": 1952,
+    "sizeBytes": 7869
+  },
+  {
+    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/huggingface_hub/templates/modelcard_template.md",
+    "tokenEst": 1718,
+    "sizeBytes": 6870
+  },
+  {
+    "path": "/workspaces/writing-agent/TASKS.md",
+    "tokenEst": 1715,
+    "sizeBytes": 6939
+  },
+  {
+    "path": "/workspaces/missioncontrol/memory/archive/2026-02-12-system-audit.md",
+    "tokenEst": 1668,
+    "sizeBytes": 6728
+  },
+  {
+    "path": "/workspaces/demrezel/artifacts/reports/2026-02-13-openclaw-operator-playbook.md",
+    "tokenEst": 1659,
+    "sizeBytes": 6685
+  },
+  {
+    "path": "/workspaces/writing-agent/GHOSTWRITER-HANDOFF-2026-02-12.md",
+    "tokenEst": 1555,
+    "sizeBytes": 6342
+  },
+  {
+    "path": "/workspaces/demrezel/SHIELD.md",
+    "tokenEst": 1529,
+    "sizeBytes": 6164
+  },
+  {
+    "path": "/workspaces/demrezel/skills/openclaw-antseed/SKILL.md",
+    "tokenEst": 1441,
+    "sizeBytes": 5775
+  },
+  {
+    "path": "/workspaces/antseed/skills/openclaw-antseed/SKILL.md",
+    "tokenEst": 1441,
+    "sizeBytes": 5775
+  },
+  {
+    "path": "/workspaces/demrezel/SKILL_ROUTING.md",
+    "tokenEst": 1387,
+    "sizeBytes": 5632
+  },
+  {
+    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/huggingface_hub/templates/datasetcard_template.md",
+    "tokenEst": 1376,
+    "sizeBytes": 5503
+  },
+  {
+    "path": "/workspaces/missioncontrol/README.md",
+    "tokenEst": 1242,
+    "sizeBytes": 5042
+  },
+  {
+    "path": "/workspaces/demrezel/memory/2026-02-13-substack-edits.md",
+    "tokenEst": 1196,
+    "sizeBytes": 4836
+  },
+  {
+    "path": "/workspaces/missioncontrol/memory/reference/skills.md",
+    "tokenEst": 1189,
+    "sizeBytes": 4753
+  },
+  {
+    "path": "/workspaces/writing-agent/style-sheet/STYLE-SHEET.md",
+    "tokenEst": 1067,
+    "sizeBytes": 4372
+  },
+  {
+    "path": "/workspaces/missioncontrol/reports/video-triage-2026-02-13.md",
+    "tokenEst": 1065,
+    "sizeBytes": 4284
+  },
+  {
+    "path": "/workspaces/token-dashboard/data/workspace_tree/antseed.json",
+    "tokenEst": 1025,
+    "sizeBytes": 4097
+  },
+  {
+    "path": "/workspaces/demrezel/skills/openclaw-deck-tracker/README.md",
+    "tokenEst": 977,
+    "sizeBytes": 3913
+  },
+  {
+    "path": "/workspaces/demrezel/eval/latest_report.md",
+    "tokenEst": 964,
+    "sizeBytes": 3869
+  },
+  {
+    "path": "/workspaces/planner/fb-rent-scout/PROGRESS.md",
+    "tokenEst": 961,
+    "sizeBytes": 3924
+  },
+  {
+    "path": "/workspaces/missioncontrol/DECISIONS.md",
+    "tokenEst": 950,
+    "sizeBytes": 3805
+  },
+  {
+    "path": "/workspaces/planner/memory/WORKING.md",
+    "tokenEst": 949,
+    "sizeBytes": 4012
+  },
+  {
+    "path": "/workspaces/missioncontrol/memory/2026-02-15-system-review.md",
+    "tokenEst": 929,
+    "sizeBytes": 3730
+  },
+  {
+    "path": "/workspaces/demrezel/skills/openclaw-deck-tracker/SKILL.md",
+    "tokenEst": 920,
+    "sizeBytes": 3690
+  },
+  {
+    "path": "/workspaces/demrezel/eval/scorecard.md",
+    "tokenEst": 901,
+    "sizeBytes": 3637
+  },
+  {
+    "path": "/workspaces/missioncontrol/CRON_MAP.md",
+    "tokenEst": 896,
+    "sizeBytes": 3591
+  },
+  {
+    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/numpy-2.4.2.dist-info/licenses/numpy/random/LICENSE.md",
+    "tokenEst": 878,
+    "sizeBytes": 3511
+  },
+  {
+    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/numpy/random/LICENSE.md",
+    "tokenEst": 878,
+    "sizeBytes": 3511
+  }
+]

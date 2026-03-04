@@ -1,0 +1,107 @@
+[
+  {
+    "id": "demrezel",
+    "name": "demrezel",
+    "path": "/workspaces/demrezel",
+    "sizeBytes": 342063440,
+    "tokenEst": 95788
+  },
+  {
+    "id": "missioncontrol",
+    "name": "missioncontrol",
+    "path": "/workspaces/missioncontrol",
+    "sizeBytes": 17999455,
+    "tokenEst": 33212
+  },
+  {
+    "id": "planner",
+    "name": "planner",
+    "path": "/workspaces/planner",
+    "sizeBytes": 344745,
+    "tokenEst": 20362
+  },
+  {
+    "id": "token-dashboard",
+    "name": "token-dashboard",
+    "path": "/workspaces/token-dashboard",
+    "sizeBytes": 8476511,
+    "tokenEst": 16091
+  },
+  {
+    "id": "writing-agent",
+    "name": "writing-agent",
+    "path": "/workspaces/writing-agent",
+    "sizeBytes": 52899,
+    "tokenEst": 13085
+  },
+  {
+    "id": "twitter",
+    "name": "twitter",
+    "path": "/workspaces/twitter",
+    "sizeBytes": 21265,
+    "tokenEst": 5231
+  },
+  {
+    "id": "executive-assistant",
+    "name": "executive-assistant",
+    "path": "/workspaces/executive-assistant",
+    "sizeBytes": 14658,
+    "tokenEst": 3549
+  },
+  {
+    "id": "summarizer",
+    "name": "summarizer",
+    "path": "/workspaces/summarizer",
+    "sizeBytes": 13222,
+    "tokenEst": 3265
+  },
+  {
+    "id": "antseed",
+    "name": "antseed",
+    "path": "/workspaces/antseed",
+    "sizeBytes": 15891,
+    "tokenEst": 2764
+  },
+  {
+    "id": "skilllookup",
+    "name": "skilllookup",
+    "path": "/workspaces/skilllookup",
+    "sizeBytes": 6161,
+    "tokenEst": 1507
+  },
+  {
+    "id": "polymarket",
+    "name": "polymarket",
+    "path": "/workspaces/polymarket",
+    "sizeBytes": 5143,
+    "tokenEst": 1253
+  },
+  {
+    "id": "scrapling",
+    "name": "scrapling",
+    "path": "/workspaces/scrapling",
+    "sizeBytes": 4343,
+    "tokenEst": 1078
+  },
+  {
+    "id": "opsreports",
+    "name": "opsreports",
+    "path": "/workspaces/opsreports",
+    "sizeBytes": 1553,
+    "tokenEst": 368
+  },
+  {
+    "id": "researcher",
+    "name": "researcher",
+    "path": "/workspaces/researcher",
+    "sizeBytes": 1322,
+    "tokenEst": 306
+  },
+  {
+    "id": ".git",
+    "name": ".git",
+    "path": "/workspaces/.git",
+    "sizeBytes": 30658,
+    "tokenEst": 0
+  }
+]

@@ -1,0 +1,416 @@
+{
+  "name": "planner",
+  "path": "/workspaces/planner",
+  "type": "dir",
+  "sizeBytes": 344745,
+  "tokenEst": 20362,
+  "children": [
+    {
+      "name": "fb-rent-scout",
+      "path": "/workspaces/planner/fb-rent-scout",
+      "type": "dir",
+      "sizeBytes": 315538,
+      "tokenEst": 16312,
+      "children": [
+        {
+          "name": "data",
+          "path": "/workspaces/planner/fb-rent-scout/data",
+          "type": "dir",
+          "sizeBytes": 110592,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "fb-rent-scout.sqlite",
+              "path": "/workspaces/planner/fb-rent-scout/data/fb-rent-scout.sqlite",
+              "type": "file",
+              "sizeBytes": 77824,
+              "tokenEst": null
+            },
+            {
+              "name": "fb-rent-scout.sqlite-shm",
+              "path": "/workspaces/planner/fb-rent-scout/data/fb-rent-scout.sqlite-shm",
+              "type": "file",
+              "sizeBytes": 32768,
+              "tokenEst": null
+            },
+            {
+              "name": "fb-rent-scout.sqlite-wal",
+              "path": "/workspaces/planner/fb-rent-scout/data/fb-rent-scout.sqlite-wal",
+              "type": "file",
+              "sizeBytes": 0,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "dist",
+          "path": "/workspaces/planner/fb-rent-scout/dist",
+          "type": "dir",
+          "sizeBytes": 70316,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "crawl",
+              "path": "/workspaces/planner/fb-rent-scout/dist/crawl",
+              "type": "dir",
+              "sizeBytes": 23187,
+              "tokenEst": 0,
+              "children": [
+                {
+                  "name": "groups.js",
+                  "path": "/workspaces/planner/fb-rent-scout/dist/crawl/groups.js",
+                  "type": "file",
+                  "sizeBytes": 20987,
+                  "tokenEst": null
+                },
+                {
+                  "name": "marketplace.js",
+                  "path": "/workspaces/planner/fb-rent-scout/dist/crawl/marketplace.js",
+                  "type": "file",
+                  "sizeBytes": 2200,
+                  "tokenEst": null
+                }
+              ]
+            },
+            {
+              "name": "config.js",
+              "path": "/workspaces/planner/fb-rent-scout/dist/config.js",
+              "type": "file",
+              "sizeBytes": 608,
+              "tokenEst": null
+            },
+            {
+              "name": "db.js",
+              "path": "/workspaces/planner/fb-rent-scout/dist/db.js",
+              "type": "file",
+              "sizeBytes": 3090,
+              "tokenEst": null
+            },
+            {
+              "name": "filter.js",
+              "path": "/workspaces/planner/fb-rent-scout/dist/filter.js",
+              "type": "file",
+              "sizeBytes": 13989,
+              "tokenEst": null
+            },
+            {
+              "name": "index.js",
+              "path": "/workspaces/planner/fb-rent-scout/dist/index.js",
+              "type": "file",
+              "sizeBytes": 22736,
+              "tokenEst": null
+            },
+            {
+              "name": "networkExtract.js",
+              "path": "/workspaces/planner/fb-rent-scout/dist/networkExtract.js",
+              "type": "file",
+              "sizeBytes": 6706,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "scripts",
+          "path": "/workspaces/planner/fb-rent-scout/scripts",
+          "type": "dir",
+          "sizeBytes": 3335,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "run_and_post.mjs",
+              "path": "/workspaces/planner/fb-rent-scout/scripts/run_and_post.mjs",
+              "type": "file",
+              "sizeBytes": 789,
+              "tokenEst": null
+            },
+            {
+              "name": "snap-post.mjs",
+              "path": "/workspaces/planner/fb-rent-scout/scripts/snap-post.mjs",
+              "type": "file",
+              "sizeBytes": 2546,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "src",
+          "path": "/workspaces/planner/fb-rent-scout/src",
+          "type": "dir",
+          "sizeBytes": 63471,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "crawl",
+              "path": "/workspaces/planner/fb-rent-scout/src/crawl",
+              "type": "dir",
+              "sizeBytes": 20668,
+              "tokenEst": 0,
+              "children": [
+                {
+                  "name": "groups.ts",
+                  "path": "/workspaces/planner/fb-rent-scout/src/crawl/groups.ts",
+                  "type": "file",
+                  "sizeBytes": 18451,
+                  "tokenEst": null
+                },
+                {
+                  "name": "marketplace.ts",
+                  "path": "/workspaces/planner/fb-rent-scout/src/crawl/marketplace.ts",
+                  "type": "file",
+                  "sizeBytes": 2217,
+                  "tokenEst": null
+                }
+              ]
+            },
+            {
+              "name": "config.ts",
+              "path": "/workspaces/planner/fb-rent-scout/src/config.ts",
+              "type": "file",
+              "sizeBytes": 598,
+              "tokenEst": null
+            },
+            {
+              "name": "db.ts",
+              "path": "/workspaces/planner/fb-rent-scout/src/db.ts",
+              "type": "file",
+              "sizeBytes": 3002,
+              "tokenEst": null
+            },
+            {
+              "name": "filter.ts",
+              "path": "/workspaces/planner/fb-rent-scout/src/filter.ts",
+              "type": "file",
+              "sizeBytes": 13438,
+              "tokenEst": null
+            },
+            {
+              "name": "index.ts",
+              "path": "/workspaces/planner/fb-rent-scout/src/index.ts",
+              "type": "file",
+              "sizeBytes": 20005,
+              "tokenEst": null
+            },
+            {
+              "name": "networkExtract.ts",
+              "path": "/workspaces/planner/fb-rent-scout/src/networkExtract.ts",
+              "type": "file",
+              "sizeBytes": 5760,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "package-lock.json",
+          "path": "/workspaces/planner/fb-rent-scout/package-lock.json",
+          "type": "file",
+          "sizeBytes": 34809,
+          "tokenEst": 8703
+        },
+        {
+          "name": "DOCUMENTATION.md",
+          "path": "/workspaces/planner/fb-rent-scout/DOCUMENTATION.md",
+          "type": "file",
+          "sizeBytes": 19789,
+          "tokenEst": 4487
+        },
+        {
+          "name": "README.md",
+          "path": "/workspaces/planner/fb-rent-scout/README.md",
+          "type": "file",
+          "sizeBytes": 8512,
+          "tokenEst": 1962
+        },
+        {
+          "name": "PROGRESS.md",
+          "path": "/workspaces/planner/fb-rent-scout/PROGRESS.md",
+          "type": "file",
+          "sizeBytes": 3924,
+          "tokenEst": 961
+        },
+        {
+          "name": "package.json",
+          "path": "/workspaces/planner/fb-rent-scout/package.json",
+          "type": "file",
+          "sizeBytes": 453,
+          "tokenEst": 114
+        },
+        {
+          "name": "tsconfig.json",
+          "path": "/workspaces/planner/fb-rent-scout/tsconfig.json",
+          "type": "file",
+          "sizeBytes": 337,
+          "tokenEst": 85
+        }
+      ]
+    },
+    {
+      "name": "memory",
+      "path": "/workspaces/planner/memory",
+      "type": "dir",
+      "sizeBytes": 9645,
+      "tokenEst": 2335,
+      "children": [
+        {
+          "name": "WORKING.md",
+          "path": "/workspaces/planner/memory/WORKING.md",
+          "type": "file",
+          "sizeBytes": 4012,
+          "tokenEst": 949
+        },
+        {
+          "name": "polymarket-prd.md",
+          "path": "/workspaces/planner/memory/polymarket-prd.md",
+          "type": "file",
+          "sizeBytes": 2549,
+          "tokenEst": 634
+        },
+        {
+          "name": "2026-02-08.md",
+          "path": "/workspaces/planner/memory/2026-02-08.md",
+          "type": "file",
+          "sizeBytes": 2400,
+          "tokenEst": 582
+        },
+        {
+          "name": "2026-02-12.md",
+          "path": "/workspaces/planner/memory/2026-02-12.md",
+          "type": "file",
+          "sizeBytes": 626,
+          "tokenEst": 155
+        },
+        {
+          "name": "2026-02-02.md",
+          "path": "/workspaces/planner/memory/2026-02-02.md",
+          "type": "file",
+          "sizeBytes": 58,
+          "tokenEst": 15
+        }
+      ]
+    },
+    {
+      "name": "appsflyer-gaming-integration",
+      "path": "/workspaces/planner/appsflyer-gaming-integration",
+      "type": "dir",
+      "sizeBytes": 15410,
+      "tokenEst": 718,
+      "children": [
+        {
+          "name": "README.md",
+          "path": "/workspaces/planner/appsflyer-gaming-integration/README.md",
+          "type": "file",
+          "sizeBytes": 2525,
+          "tokenEst": 629
+        },
+        {
+          "name": "mcp-config.json",
+          "path": "/workspaces/planner/appsflyer-gaming-integration/mcp-config.json",
+          "type": "file",
+          "sizeBytes": 354,
+          "tokenEst": 89
+        },
+        {
+          "name": ".env.example",
+          "path": "/workspaces/planner/appsflyer-gaming-integration/.env.example",
+          "type": "file",
+          "sizeBytes": 155,
+          "tokenEst": null
+        },
+        {
+          "name": "gaming_tools.py",
+          "path": "/workspaces/planner/appsflyer-gaming-integration/gaming_tools.py",
+          "type": "file",
+          "sizeBytes": 12376,
+          "tokenEst": null
+        }
+      ]
+    },
+    {
+      "name": ".openclaw",
+      "path": "/workspaces/planner/.openclaw",
+      "type": "dir",
+      "sizeBytes": 74,
+      "tokenEst": 19,
+      "children": [
+        {
+          "name": "workspace-state.json",
+          "path": "/workspaces/planner/.openclaw/workspace-state.json",
+          "type": "file",
+          "sizeBytes": 74,
+          "tokenEst": 19
+        }
+      ]
+    },
+    {
+      "name": "config",
+      "path": "/workspaces/planner/config",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "scripts",
+      "path": "/workspaces/planner/scripts",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/planner/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 948,
+      "tokenEst": 236
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/planner/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 860,
+      "tokenEst": 213
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/planner/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 635,
+      "tokenEst": 159
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/planner/USER.md",
+      "type": "file",
+      "sizeBytes": 481,
+      "tokenEst": 120
+    },
+    {
+      "name": "README.md",
+      "path": "/workspaces/planner/README.md",
+      "type": "file",
+      "sizeBytes": 438,
+      "tokenEst": 110
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/planner/SOUL.md",
+      "type": "file",
+      "sizeBytes": 397,
+      "tokenEst": 98
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/planner/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 168,
+      "tokenEst": 42
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/planner/.gitignore",
+      "type": "file",
+      "sizeBytes": 151,
+      "tokenEst": null
+    }
+  ]
+}

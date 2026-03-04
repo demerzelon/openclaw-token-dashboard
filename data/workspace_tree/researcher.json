@@ -1,0 +1,53 @@
+{
+  "name": "researcher",
+  "path": "/workspaces/researcher",
+  "type": "dir",
+  "sizeBytes": 1322,
+  "tokenEst": 306,
+  "children": [
+    {
+      "name": "memory",
+      "path": "/workspaces/researcher/memory",
+      "type": "dir",
+      "sizeBytes": 216,
+      "tokenEst": 54,
+      "children": [
+        {
+          "name": "WORKING.md",
+          "path": "/workspaces/researcher/memory/WORKING.md",
+          "type": "file",
+          "sizeBytes": 216,
+          "tokenEst": 54
+        }
+      ]
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/researcher/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 662,
+      "tokenEst": 166
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/researcher/SOUL.md",
+      "type": "file",
+      "sizeBytes": 329,
+      "tokenEst": 82
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/researcher/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 15,
+      "tokenEst": 4
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/researcher/.gitignore",
+      "type": "file",
+      "sizeBytes": 100,
+      "tokenEst": null
+    }
+  ]
+}

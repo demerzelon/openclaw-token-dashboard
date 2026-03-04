@@ -1,0 +1,75 @@
+{
+  "name": "scrapling",
+  "path": "/workspaces/scrapling",
+  "type": "dir",
+  "sizeBytes": 4343,
+  "tokenEst": 1078,
+  "children": [
+    {
+      "name": ".openclaw",
+      "path": "/workspaces/scrapling/.openclaw",
+      "type": "dir",
+      "sizeBytes": 74,
+      "tokenEst": 19,
+      "children": [
+        {
+          "name": "workspace-state.json",
+          "path": "/workspaces/scrapling/.openclaw/workspace-state.json",
+          "type": "file",
+          "sizeBytes": 74,
+          "tokenEst": 19
+        }
+      ]
+    },
+    {
+      "name": "memory",
+      "path": "/workspaces/scrapling/memory",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/scrapling/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 1407,
+      "tokenEst": 350
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/scrapling/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 1323,
+      "tokenEst": 328
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/scrapling/SOUL.md",
+      "type": "file",
+      "sizeBytes": 754,
+      "tokenEst": 186
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/scrapling/USER.md",
+      "type": "file",
+      "sizeBytes": 477,
+      "tokenEst": 119
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/scrapling/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 168,
+      "tokenEst": 42
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/scrapling/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 140,
+      "tokenEst": 34
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "name": "opsreports",
+  "path": "/workspaces/opsreports",
+  "type": "dir",
+  "sizeBytes": 1553,
+  "tokenEst": 368,
+  "children": [
+    {
+      "name": "memory",
+      "path": "/workspaces/opsreports/memory",
+      "type": "dir",
+      "sizeBytes": 223,
+      "tokenEst": 55,
+      "children": [
+        {
+          "name": "WORKING.md",
+          "path": "/workspaces/opsreports/memory/WORKING.md",
+          "type": "file",
+          "sizeBytes": 112,
+          "tokenEst": 28
+        },
+        {
+          "name": "INDEX.md",
+          "path": "/workspaces/opsreports/memory/INDEX.md",
+          "type": "file",
+          "sizeBytes": 69,
+          "tokenEst": 17
+        },
+        {
+          "name": "active-tasks.md",
+          "path": "/workspaces/opsreports/memory/active-tasks.md",
+          "type": "file",
+          "sizeBytes": 42,
+          "tokenEst": 10
+        }
+      ]
+    },
+    {
+      "name": "config",
+      "path": "/workspaces/opsreports/config",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "reports",
+      "path": "/workspaces/opsreports/reports",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "scripts",
+      "path": "/workspaces/opsreports/scripts",
+      "type": "dir",
+      "sizeBytes": 0,
+      "tokenEst": 0,
+      "children": []
+    },
+    {
+      "name": "README.md",
+      "path": "/workspaces/opsreports/README.md",
+      "type": "file",
+      "sizeBytes": 381,
+      "tokenEst": 96
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/opsreports/SOUL.md",
+      "type": "file",
+      "sizeBytes": 297,
+      "tokenEst": 74
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/opsreports/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 237,
+      "tokenEst": 59
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/opsreports/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 107,
+      "tokenEst": 27
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/opsreports/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 95,
+      "tokenEst": 24
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/opsreports/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 71,
+      "tokenEst": 18
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/opsreports/USER.md",
+      "type": "file",
+      "sizeBytes": 60,
+      "tokenEst": 15
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/opsreports/.gitignore",
+      "type": "file",
+      "sizeBytes": 82,
+      "tokenEst": null
+    }
+  ]
+}

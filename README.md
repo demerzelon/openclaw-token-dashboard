@@ -5,6 +5,8 @@ This generates a static dashboard (suitable for GitHub Pages) showing:
 - cron job token usage
 - workspace context file explorer with file sizes + estimated tokens
 
+**v2 payload:** summary JSONs are small; workspace trees are lazy-loaded per workspace root.
+
 ## Safety / redaction
 - No file contents are included.
 - Absolute paths are redacted (publish-ish).
@@ -14,7 +16,7 @@ This generates a static dashboard (suitable for GitHub Pages) showing:
 From this directory:
 
 ```bash
-node ./src/generate-data.js
+node ./src/generate-data-v2.js
 ```
 
 This writes JSON files into `./data/`.
@@ -27,11 +29,11 @@ Open `index.html` in your browser.
 - Commit everything in this folder
 - Enable GitHub Pages (Settings → Pages → deploy from branch)
 
-Re-run `node ./src/generate-data.js` before each publish to refresh the data.
+Re-run `node ./src/generate-data-v2.js` before each publish to refresh the data.
 
 ## Configuration
 You can override locations via env vars:
 
 ```bash
-OPENCLAW_DIR=/Users/<you>/.openclaw WORKSPACES_DIR=/Users/<you>/.openclaw/workspaces node ./src/generate-data.js
+OPENCLAW_DIR=/Users/<you>/.openclaw WORKSPACES_DIR=/Users/<you>/.openclaw/workspaces node ./src/generate-data-v2.js
 ```

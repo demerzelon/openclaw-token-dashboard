@@ -1,0 +1,81 @@
+{
+  "name": "polymarket",
+  "path": "/workspaces/polymarket",
+  "type": "dir",
+  "sizeBytes": 5143,
+  "tokenEst": 1253,
+  "children": [
+    {
+      "name": "memory",
+      "path": "/workspaces/polymarket/memory",
+      "type": "dir",
+      "sizeBytes": 1165,
+      "tokenEst": 289,
+      "children": [
+        {
+          "name": "WORKING.md",
+          "path": "/workspaces/polymarket/memory/WORKING.md",
+          "type": "file",
+          "sizeBytes": 628,
+          "tokenEst": 155
+        },
+        {
+          "name": "2026-02-10.md",
+          "path": "/workspaces/polymarket/memory/2026-02-10.md",
+          "type": "file",
+          "sizeBytes": 537,
+          "tokenEst": 134
+        }
+      ]
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "/workspaces/polymarket/AGENTS.md",
+      "type": "file",
+      "sizeBytes": 1533,
+      "tokenEst": 382
+    },
+    {
+      "name": "TOOLS.md",
+      "path": "/workspaces/polymarket/TOOLS.md",
+      "type": "file",
+      "sizeBytes": 819,
+      "tokenEst": 204
+    },
+    {
+      "name": "SOUL.md",
+      "path": "/workspaces/polymarket/SOUL.md",
+      "type": "file",
+      "sizeBytes": 820,
+      "tokenEst": 202
+    },
+    {
+      "name": "USER.md",
+      "path": "/workspaces/polymarket/USER.md",
+      "type": "file",
+      "sizeBytes": 481,
+      "tokenEst": 120
+    },
+    {
+      "name": "IDENTITY.md",
+      "path": "/workspaces/polymarket/IDENTITY.md",
+      "type": "file",
+      "sizeBytes": 138,
+      "tokenEst": 34
+    },
+    {
+      "name": "HEARTBEAT.md",
+      "path": "/workspaces/polymarket/HEARTBEAT.md",
+      "type": "file",
+      "sizeBytes": 87,
+      "tokenEst": 22
+    },
+    {
+      "name": ".gitignore",
+      "path": "/workspaces/polymarket/.gitignore",
+      "type": "file",
+      "sizeBytes": 100,
+      "tokenEst": null
+    }
+  ]
+}
