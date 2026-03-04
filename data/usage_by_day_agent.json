@@ -1,0 +1,36 @@
+{
+  "2026-03-01": {
+    "planner": 11556,
+    "missioncontrol": 3679595,
+    "executive-assistant": 191269,
+    "demrezel": 2570814,
+    "antseed": 212121
+  },
+  "2026-03-04": {
+    "planner": 1355806,
+    "missioncontrol": 187918,
+    "executive-assistant": 143539,
+    "demrezel": 5263518,
+    "antseed": 38926
+  },
+  "2026-02-28": {
+    "planner": 11554,
+    "executive-assistant": 163186,
+    "demrezel": 3691516
+  },
+  "2026-03-02": {
+    "planner": 62506,
+    "missioncontrol": 631212,
+    "main": 616181,
+    "executive-assistant": 122410,
+    "demrezel": 3130576,
+    "antseed": 1598549
+  },
+  "2026-03-03": {
+    "planner": 100609,
+    "missioncontrol": 1105739,
+    "executive-assistant": 1636380,
+    "demrezel": 7230532,
+    "antseed": 152665
+  }
+}

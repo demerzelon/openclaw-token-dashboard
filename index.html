@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenClaw Token Usage Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>OpenClaw Token Usage Dashboard</h1>
+    <div class="meta">
+      <span id="generatedAt">Loading…</span>
+      <button id="refreshBtn" title="Regenerate JSON locally, then reload this page">Reload</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h2>Last 5 days — tokens by model</h2>
+        <div id="byModel" class="table"></div>
+      </div>
+      <div class="card">
+        <h2>Last 5 days — tokens by agent</h2>
+        <div id="byAgent" class="table"></div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Cron spend — tokens by job</h2>
+        <div id="cronByJob" class="table"></div>
+      </div>
+      <div class="card">
+        <h2>Top context files (estimated tokens if loaded)</h2>
+        <div id="topFiles" class="table"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Context explorer</h2>
+      <p class="hint">
+        Redacted paths. Token estimates use a rough heuristic (~chars/4). No file contents are published.
+      </p>
+      <div class="explorer">
+        <div id="tree"></div>
+        <div id="detail" class="detail">Select a file/folder…</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Generated from local OpenClaw logs + workspace files.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

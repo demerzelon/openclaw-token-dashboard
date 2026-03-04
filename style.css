@@ -1,0 +1,70 @@
+:root {
+  --bg: #0b0f17;
+  --card: #121a27;
+  --text: #e9eef7;
+  --muted: #aab6cc;
+  --accent: #6ea8fe;
+  --border: rgba(255,255,255,0.08);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+header{
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+header h1{margin:0;font-size:18px;letter-spacing:0.2px}
+.meta{color:var(--muted);font-size:12px;display:flex;gap:12px;align-items:center}
+button{
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover{border-color: rgba(255,255,255,0.18)}
+
+main{padding: 16px 20px 30px; max-width: 1200px; margin: 0 auto;}
+.grid{display:grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;}
+@media (max-width: 900px){ .grid{grid-template-columns: 1fr;} }
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+}
+.card h2{margin:0 0 10px 0; font-size:14px;}
+.hint{color:var(--muted); font-size:12px; margin:0 0 10px 0}
+
+.table{font-size:12px}
+.table table{width:100%; border-collapse: collapse;}
+.table th, .table td{padding: 8px 6px; border-bottom: 1px solid var(--border); vertical-align: top;}
+.table th{color: var(--muted); font-weight: 600; text-align: left;}
+.bar{
+  height: 8px;
+  background: rgba(110,168,254,0.2);
+  border-radius: 999px;
+  overflow:hidden;
+}
+.bar > span{display:block; height:100%; background: var(--accent);}
+
+.explorer{display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 12px;}
+@media (max-width: 900px){ .explorer{grid-template-columns: 1fr;} }
+
+.tree-node{margin-left: 10px;}
+.tree-row{display:flex; align-items:center; gap:8px; padding: 4px 2px; cursor:pointer; border-radius: 6px;}
+.tree-row:hover{background: rgba(255,255,255,0.04)}
+.badge{color: var(--muted); font-size: 11px; margin-left:auto}
+.icon{width: 16px; opacity:0.9}
+.detail{color: var(--muted); font-size: 12px; border: 1px dashed var(--border); border-radius: 10px; padding: 10px;}
+
+footer{padding: 14px 20px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border);}

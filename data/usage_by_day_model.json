@@ -1,0 +1,31 @@
+{
+  "2026-03-01": {
+    "claude-opus-4-6": 5303653,
+    "claude-sonnet-4-5": 1149581,
+    "moonshotai/kimi-k2.5": 212121
+  },
+  "2026-03-04": {
+    "gpt-5.2": 6092693,
+    "gpt-4o": 249280,
+    "claude-sonnet-4-5": 316063,
+    "claude-opus-4-5": 292745,
+    "deepseek-r1": 38926
+  },
+  "2026-02-28": {
+    "claude-opus-4-6": 1924117,
+    "claude-sonnet-4-5": 1942139
+  },
+  "2026-03-02": {
+    "claude-opus-4-6": 3978985,
+    "deepseek-ai/DeepSeek-R1": 285239,
+    "gpt-5.2": 315392,
+    "claude-sonnet-4-5": 1484278,
+    "moonshotai/kimi-k2.5": 97540
+  },
+  "2026-03-03": {
+    "claude-opus-4-6": 4564058,
+    "gpt-5.2": 4126288,
+    "gpt-4o": 362323,
+    "claude-sonnet-4-5": 1173256
+  }
+}
