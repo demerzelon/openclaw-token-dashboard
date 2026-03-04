@@ -64,8 +64,15 @@ function renderStackedBarChart(container, byDayThenKey, { maxKeys = 8 } = {}){
 
   let svg = `<svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}" role="img" aria-label="stacked bar chart">`;
 
-  // axes baseline
-  svg += `<line x1="${padL}" y1="${padT+chartH}" x2="${padL+chartW}" y2="${padT+chartH}" stroke="rgba(255,255,255,0.12)"/>`;
+  // gridlines + baseline
+  const gridLines = 3;
+  for (let g=0; g<=gridLines; g++){
+    const y = padT + chartH - (g/gridLines)*chartH;
+    const v = Math.round((g/gridLines)*maxTotal);
+    svg += `<line x1="${padL}" y1="${y}" x2="${padL+chartW}" y2="${y}" stroke="rgba(255,255,255,0.08)"/>`;
+    svg += `<text x="${padL-6}" y="${y+3}" text-anchor="end" font-size="10" fill="#aab6cc">${formatInt(v)}</text>`;
+  }
+  svg += `<line x1="${padL}" y1="${padT+chartH}" x2="${padL+chartW}" y2="${padT+chartH}" stroke="rgba(255,255,255,0.14)"/>`;
 
   // bars
   for (let i=0;i<days.length;i++){
@@ -91,7 +98,7 @@ function renderStackedBarChart(container, byDayThenKey, { maxKeys = 8 } = {}){
       const h = (v / maxTotal) * chartH;
       y -= h;
       const fill = k === 'other' ? 'rgba(255,255,255,0.18)' : hashColor(k);
-      svg += `<rect x="${x}" y="${y}" width="${barW}" height="${h}" fill="${fill}">`;
+      svg += `<rect x="${x}" y="${y}" width="${barW}" height="${h}" rx="4" fill="${fill}">`;
       svg += `<title>${escapeHtml(d)} • ${escapeHtml(k)}: ${formatInt(v)} tokens</title>`;
       svg += `</rect>`;
     }
@@ -120,7 +127,7 @@ function renderHorizontalBarChart(container, rows, { labelKey='label', valueKey=
   if (!data.length){ container.innerHTML = '<div class="hint">No data</div>'; return; }
 
   const width = 560, height = 22*data.length + 18;
-  const padL = 160, padR = 18, padT = 8;
+  const padL = 180, padR = 18, padT = 8;
   const chartW = width - padL - padR;
 
   const maxVal = Math.max(1, ...data.map(r => r[valueKey] || 0));
@@ -240,8 +247,33 @@ function renderDetail(container, node){
   container.innerHTML = lines.join('');
 }
 
+function setMode(mode){
+  // mode: graphs | data | both
+  const body = document.body;
+  body.classList.remove('view-graphs-only','view-data-only');
+  if (mode === 'graphs') body.classList.add('view-graphs-only');
+  if (mode === 'data') body.classList.add('view-data-only');
+
+  const btnG = document.getElementById('modeGraphs');
+  const btnD = document.getElementById('modeData');
+  const btnB = document.getElementById('modeBoth');
+  for (const b of [btnG, btnD, btnB]) b.classList.remove('active');
+  if (mode === 'graphs') btnG.classList.add('active');
+  if (mode === 'data') btnD.classList.add('active');
+  if (mode === 'both') btnB.classList.add('active');
+
+  try { localStorage.setItem('tokenDashMode', mode); } catch {}
+}
+
 async function main(){
   document.getElementById('refreshBtn').onclick = () => location.reload();
+
+  // mode toggle
+  const saved = (() => { try { return localStorage.getItem('tokenDashMode'); } catch { return null; } })();
+  setMode(saved || 'graphs');
+  document.getElementById('modeGraphs').onclick = () => setMode('graphs');
+  document.getElementById('modeData').onclick = () => setMode('data');
+  document.getElementById('modeBoth').onclick = () => setMode('both');
 
   const meta = await loadJSON('./data/meta.json');
   document.getElementById('generatedAt').textContent = `Generated: ${meta.generatedAt} · Window: ${meta.windowDays}d · Redaction: ${meta.redaction.mode}`;
