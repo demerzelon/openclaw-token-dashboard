@@ -15,6 +15,136 @@ function escapeHtml(s){
     .replaceAll("'",'&#039;');
 }
 
+// ─────────────────────────────────────────────────────────────
+// Simple SVG charts (no deps)
+// ─────────────────────────────────────────────────────────────
+
+const PALETTE = [
+  '#6ea8fe', '#7ee787', '#ffb86c', '#ff7b72', '#d2a8ff',
+  '#ffa657', '#a5d6ff', '#f2cc60', '#8ddbff', '#c9d1d9'
+];
+
+function hashColor(key){
+  let h = 0;
+  for (let i=0;i<key.length;i++) h = (h*31 + key.charCodeAt(i)) >>> 0;
+  return PALETTE[h % PALETTE.length];
+}
+
+function renderStackedBarChart(container, byDayThenKey, { maxKeys = 8 } = {}){
+  const days = Object.keys(byDayThenKey || {}).sort();
+  if (!days.length){ container.innerHTML = '<div class="hint">No data</div>'; return; }
+
+  // totals per key for top-N selection
+  const keyTotals = {};
+  for (const d of days){
+    for (const [k,v] of Object.entries(byDayThenKey[d] || {})){
+      keyTotals[k] = (keyTotals[k]||0) + (v||0);
+    }
+  }
+  const keys = Object.entries(keyTotals)
+    .sort((a,b)=>b[1]-a[1])
+    .slice(0, maxKeys)
+    .map(([k])=>k);
+
+  const width = 560, height = 160;
+  const padL = 34, padR = 10, padT = 10, padB = 26;
+  const chartW = width - padL - padR;
+  const chartH = height - padT - padB;
+
+  const dayTotals = days.map(d => {
+    const row = byDayThenKey[d] || {};
+    let sum = 0;
+    for (const [k,v] of Object.entries(row)) sum += (v||0);
+    return sum;
+  });
+  const maxTotal = Math.max(1, ...dayTotals);
+
+  const barGap = 10;
+  const barW = Math.max(14, Math.floor((chartW - barGap*(days.length-1)) / days.length));
+
+  let svg = `<svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}" role="img" aria-label="stacked bar chart">`;
+
+  // axes baseline
+  svg += `<line x1="${padL}" y1="${padT+chartH}" x2="${padL+chartW}" y2="${padT+chartH}" stroke="rgba(255,255,255,0.12)"/>`;
+
+  // bars
+  for (let i=0;i<days.length;i++){
+    const d = days[i];
+    const row = byDayThenKey[d] || {};
+    const total = dayTotals[i];
+    let x = padL + i*(barW+barGap);
+    let y = padT + chartH;
+
+    // stack: keys + other
+    const parts = [];
+    let knownSum = 0;
+    for (const k of keys){
+      const v = row[k] || 0;
+      knownSum += v;
+      parts.push([k,v]);
+    }
+    const other = Math.max(0, total - knownSum);
+    if (other > 0) parts.push(['other', other]);
+
+    for (const [k,v] of parts){
+      if (!v) continue;
+      const h = (v / maxTotal) * chartH;
+      y -= h;
+      const fill = k === 'other' ? 'rgba(255,255,255,0.18)' : hashColor(k);
+      svg += `<rect x="${x}" y="${y}" width="${barW}" height="${h}" fill="${fill}">`;
+      svg += `<title>${escapeHtml(d)} • ${escapeHtml(k)}: ${formatInt(v)} tokens</title>`;
+      svg += `</rect>`;
+    }
+
+    // x labels
+    svg += `<text x="${x + barW/2}" y="${padT+chartH+16}" text-anchor="middle" font-size="10" fill="#aab6cc">${escapeHtml(d.slice(5))}</text>`;
+  }
+
+  // legend
+  let lx = padL;
+  let ly = height - 6;
+  for (const k of [...keys, 'other']){
+    const fill = k === 'other' ? 'rgba(255,255,255,0.18)' : hashColor(k);
+    svg += `<rect x="${lx}" y="${ly-8}" width="10" height="10" fill="${fill}"/>`;
+    svg += `<text x="${lx+14}" y="${ly}" font-size="10" fill="#aab6cc">${escapeHtml(k)}</text>`;
+    lx += 14 + Math.min(110, (k.length*6));
+    if (lx > width - 120){ lx = padL; ly -= 14; }
+  }
+
+  svg += `</svg>`;
+  container.innerHTML = svg;
+}
+
+function renderHorizontalBarChart(container, rows, { labelKey='label', valueKey='value', maxBars=10 } = {}){
+  const data = (rows || []).slice(0, maxBars);
+  if (!data.length){ container.innerHTML = '<div class="hint">No data</div>'; return; }
+
+  const width = 560, height = 22*data.length + 18;
+  const padL = 160, padR = 18, padT = 8;
+  const chartW = width - padL - padR;
+
+  const maxVal = Math.max(1, ...data.map(r => r[valueKey] || 0));
+
+  let svg = `<svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}" role="img" aria-label="bar chart">`;
+
+  data.forEach((r, i) => {
+    const y = padT + i*22;
+    const v = r[valueKey] || 0;
+    const w = (v/maxVal) * chartW;
+    const label = String(r[labelKey]);
+    const fill = hashColor(label);
+
+    svg += `<text x="8" y="${y+12}" font-size="10" fill="#aab6cc">${escapeHtml(label)}</text>`;
+    svg += `<rect x="${padL}" y="${y+3}" width="${w}" height="12" rx="6" fill="${fill}">`;
+    svg += `<title>${escapeHtml(label)}: ${formatInt(v)} tokens</title>`;
+    svg += `</rect>`;
+    svg += `<text x="${padL + w + 6}" y="${y+12}" font-size="10" fill="#aab6cc">${formatInt(v)}</text>`;
+  });
+
+  svg += `</svg>`;
+  container.innerHTML = svg;
+}
+
 function renderMatrix(container, byDayThenKey, titleKeyLabel){
   const days = Object.keys(byDayThenKey || {}).sort();
   const keysSet = new Set();
@@ -124,6 +254,11 @@ async function main(){
     loadJSON('./data/workspace_roots.json')
   ]);
 
+  // Charts
+  renderStackedBarChart(document.getElementById('chartByModel'), byModel, { maxKeys: 7 });
+  renderStackedBarChart(document.getElementById('chartByAgent'), byAgent, { maxKeys: 7 });
+
+  // Tables (kept for exact numbers)
   renderMatrix(document.getElementById('byModel'), byModel, 'Model');
   renderMatrix(document.getElementById('byAgent'), byAgent, 'Agent');
 
@@ -136,10 +271,23 @@ async function main(){
   }
   const cronRows = Object.entries(cronTotals).sort((a,b)=>b[1]-a[1]).slice(0,20)
     .map(([jobId,tokens])=>({jobId,tokens}));
+
+  renderHorizontalBarChart(
+    document.getElementById('chartCron'),
+    cronRows.slice(0,10).map(r => ({ label: r.jobId.slice(0, 10) + '…', value: r.tokens })),
+    { labelKey: 'label', valueKey: 'value', maxBars: 10 }
+  );
+
   renderListTable(document.getElementById('cronByJob'), cronRows, [
     { label: 'jobId', key: 'jobId', render: r => `<code>${escapeHtml(r.jobId)}</code>` },
     { label: 'tokens (5d)', key: 'tokens', render: r => formatInt(r.tokens) }
   ]);
+
+  renderHorizontalBarChart(
+    document.getElementById('chartTopFiles'),
+    topFiles.slice(0,10).map(r => ({ label: r.path.split('/').slice(-2).join('/'), value: r.tokenEst })),
+    { labelKey: 'label', valueKey: 'value', maxBars: 10 }
+  );
 
   renderListTable(document.getElementById('topFiles'), topFiles.slice(0,20), [
     { label: 'path', key: 'path', render: r => `<code>${escapeHtml(r.path)}</code>` },

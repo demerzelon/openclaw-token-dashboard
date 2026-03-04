@@ -45,6 +45,8 @@ main{padding: 16px 20px 30px; max-width: 1200px; margin: 0 auto;}
 .card h2{margin:0 0 10px 0; font-size:14px;}
 .hint{color:var(--muted); font-size:12px; margin:0 0 10px 0}
 
+.chart{margin: 6px 0 10px 0;}
+
 .table{font-size:12px}
 .table table{width:100%; border-collapse: collapse;}
 .table th, .table td{padding: 8px 6px; border-bottom: 1px solid var(--border); vertical-align: top;}
