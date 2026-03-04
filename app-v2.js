@@ -30,9 +30,17 @@ function hashColor(key){
   return PALETTE[h % PALETTE.length];
 }
 
-function renderStackedBarChart(container, byDayThenKey, { maxKeys = 8 } = {}){
+function renderStackedBarChart(container, byDayThenKey, { maxKeys = 8, includeOther = true, enabledKeys = null, chartId = 'chart' } = {}){
   const days = Object.keys(byDayThenKey || {}).sort();
-  if (!days.length){ container.innerHTML = '<div class="hint">No data</div>'; return; }
+  if (!days.length){ container.innerHTML = '<div class="hint">No data</div>'; return { keys: [] }; }
+
+  // responsive width
+  const boxW = Math.max(520, Math.floor(container.getBoundingClientRect().width || 560));
+  const width = boxW;
+  const height = 170;
+  const padL = 44, padR = 10, padT = 12, padB = 28;
+  const chartW = width - padL - padR;
+  const chartH = height - padT - padB;
 
   // totals per key for top-N selection
   const keyTotals = {};
@@ -41,15 +49,12 @@ function renderStackedBarChart(container, byDayThenKey, { maxKeys = 8 } = {}){
       keyTotals[k] = (keyTotals[k]||0) + (v||0);
     }
   }
-  const keys = Object.entries(keyTotals)
+  const topKeys = Object.entries(keyTotals)
     .sort((a,b)=>b[1]-a[1])
     .slice(0, maxKeys)
     .map(([k])=>k);
 
-  const width = 560, height = 160;
-  const padL = 34, padR = 10, padT = 10, padB = 26;
-  const chartW = width - padL - padR;
-  const chartH = height - padT - padB;
+  const keys = enabledKeys ? topKeys.filter(k => enabledKeys.has(k)) : topKeys;
 
   const dayTotals = days.map(d => {
     const row = byDayThenKey[d] || {};
@@ -59,10 +64,10 @@ function renderStackedBarChart(container, byDayThenKey, { maxKeys = 8 } = {}){
   });
   const maxTotal = Math.max(1, ...dayTotals);
 
-  const barGap = 10;
+  const barGap = Math.max(8, Math.floor(chartW / 70));
   const barW = Math.max(14, Math.floor((chartW - barGap*(days.length-1)) / days.length));
 
-  let svg = `<svg viewBox="0 0 ${width} ${height}" width="100%" height="${height}" role="img" aria-label="stacked bar chart">`;
+  let svg = `<svg data-chart-id="${escapeHtml(chartId)}" viewBox="0 0 ${width} ${height}" width="100%" height="${height}" role="img" aria-label="stacked bar chart">`;
 
   // gridlines + baseline
   const gridLines = 3;
@@ -79,7 +84,7 @@ function renderStackedBarChart(container, byDayThenKey, { maxKeys = 8 } = {}){
     const d = days[i];
     const row = byDayThenKey[d] || {};
     const total = dayTotals[i];
-    let x = padL + i*(barW+barGap);
+    const x = padL + i*(barW+barGap);
     let y = padT + chartH;
 
     // stack: keys + other
@@ -90,36 +95,64 @@ function renderStackedBarChart(container, byDayThenKey, { maxKeys = 8 } = {}){
       knownSum += v;
       parts.push([k,v]);
     }
-    const other = Math.max(0, total - knownSum);
-    if (other > 0) parts.push(['other', other]);
+    const other = includeOther ? Math.max(0, total - knownSum) : 0;
+    if (includeOther && other > 0) parts.push(['other', other]);
 
     for (const [k,v] of parts){
       if (!v) continue;
       const h = (v / maxTotal) * chartH;
       y -= h;
       const fill = k === 'other' ? 'rgba(255,255,255,0.18)' : hashColor(k);
-      svg += `<rect x="${x}" y="${y}" width="${barW}" height="${h}" rx="4" fill="${fill}">`;
-      svg += `<title>${escapeHtml(d)} • ${escapeHtml(k)}: ${formatInt(v)} tokens</title>`;
-      svg += `</rect>`;
+      const tip = `${d} • ${k}: ${formatInt(v)} tokens`;
+      svg += `<rect data-tip="${escapeHtml(tip)}" x="${x}" y="${y}" width="${barW}" height="${h}" rx="4" fill="${fill}"></rect>`;
     }
 
     // x labels
-    svg += `<text x="${x + barW/2}" y="${padT+chartH+16}" text-anchor="middle" font-size="10" fill="#aab6cc">${escapeHtml(d.slice(5))}</text>`;
-  }
-
-  // legend
-  let lx = padL;
-  let ly = height - 6;
-  for (const k of [...keys, 'other']){
-    const fill = k === 'other' ? 'rgba(255,255,255,0.18)' : hashColor(k);
-    svg += `<rect x="${lx}" y="${ly-8}" width="10" height="10" fill="${fill}"/>`;
-    svg += `<text x="${lx+14}" y="${ly}" font-size="10" fill="#aab6cc">${escapeHtml(k)}</text>`;
-    lx += 14 + Math.min(110, (k.length*6));
-    if (lx > width - 120){ lx = padL; ly -= 14; }
+    svg += `<text x="${x + barW/2}" y="${padT+chartH+18}" text-anchor="middle" font-size="10" fill="#aab6cc">${escapeHtml(d.slice(5))}</text>`;
   }
 
   svg += `</svg>`;
   container.innerHTML = svg;
+
+  // tooltip wiring
+  attachTooltip(container);
+
+  return { keys: topKeys };
+}
+
+function attachTooltip(chartContainer){
+  const svg = chartContainer.querySelector('svg');
+  if (!svg) return;
+
+  let tip = chartContainer.querySelector('.tooltip');
+  if (!tip){
+    tip = document.createElement('div');
+    tip.className = 'tooltip';
+    tip.style.display = 'none';
+    chartContainer.appendChild(tip);
+  }
+
+  const show = (e, text) => {
+    tip.innerHTML = `<div>${escapeHtml(text)}</div><div class="muted">hover to inspect</div>`;
+    tip.style.display = 'block';
+    const r = chartContainer.getBoundingClientRect();
+    const x = e.clientX - r.left + 10;
+    const y = e.clientY - r.top + 10;
+    tip.style.left = `${Math.min(x, r.width - 330)}px`;
+    tip.style.top = `${Math.min(y, r.height - 60)}px`;
+  };
+
+  const hide = () => { tip.style.display = 'none'; };
+
+  svg.addEventListener('mousemove', (e) => {
+    const t = e.target;
+    if (t && t.tagName === 'rect' && t.getAttribute('data-tip')){
+      show(e, t.getAttribute('data-tip'));
+    } else {
+      hide();
+    }
+  });
+  svg.addEventListener('mouseleave', hide);
 }
 
 function renderHorizontalBarChart(container, rows, { labelKey='label', valueKey='value', maxBars=10 } = {}){
@@ -286,9 +319,42 @@ async function main(){
     loadJSON('./data/workspace_roots.json')
   ]);
 
-  // Charts
-  renderStackedBarChart(document.getElementById('chartByModel'), byModel, { maxKeys: 7 });
-  renderStackedBarChart(document.getElementById('chartByAgent'), byAgent, { maxKeys: 7 });
+  // Charts + interactive legends
+  const modelState = { enabled: new Set() };
+  const agentState = { enabled: new Set() };
+
+  function renderLegend(el, keys, state, onChange){
+    el.innerHTML = '';
+    for (const k of keys){
+      const btn = document.createElement('button');
+      const on = state.enabled.size === 0 || state.enabled.has(k);
+      btn.className = on ? 'on' : '';
+      btn.innerHTML = `<span class="sw" style="background:${k==='other'?'rgba(255,255,255,0.18)':hashColor(k)}"></span>${escapeHtml(k)}`;
+      btn.onclick = () => {
+        // if empty set => treat as all-on; first click should start explicit set with all except toggled
+        if (state.enabled.size === 0){
+          for (const kk of keys) state.enabled.add(kk);
+        }
+        if (state.enabled.has(k)) state.enabled.delete(k); else state.enabled.add(k);
+        // never allow empty (would show nothing). if empty, reset to "all"
+        if (state.enabled.size === 0) state.enabled.clear();
+        onChange();
+      };
+      el.appendChild(btn);
+    }
+  }
+
+  function renderModel(){
+    const { keys } = renderStackedBarChart(document.getElementById('chartByModel'), byModel, { maxKeys: 7, enabledKeys: modelState.enabled.size ? modelState.enabled : null, chartId: 'model' });
+    renderLegend(document.getElementById('legendByModel'), keys, modelState, renderModel);
+  }
+  function renderAgent(){
+    const { keys } = renderStackedBarChart(document.getElementById('chartByAgent'), byAgent, { maxKeys: 7, enabledKeys: agentState.enabled.size ? agentState.enabled : null, chartId: 'agent' });
+    renderLegend(document.getElementById('legendByAgent'), keys, agentState, renderAgent);
+  }
+
+  renderModel();
+  renderAgent();
 
   // Tables (kept for exact numbers)
   renderMatrix(document.getElementById('byModel'), byModel, 'Model');
