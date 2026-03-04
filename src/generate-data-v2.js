@@ -211,17 +211,38 @@ function aggregateUsageCron(){
   const runsRoot = path.join(OPENCLAW_DIR, 'cron', 'runs');
   const byDayJob = {};
 
-  if (!exists(runsRoot)) return { byDayJob };
+  if (!exists(runsRoot)) return { byDayJob, diagnostics: { noRunsFound: true } };
   const runFiles = listFilesRecursive(runsRoot, { exts: ['.jsonl'] });
 
   for (const file of runFiles){
     const jobId = path.basename(file).replace(/\.jsonl$/, '');
-    let events;
+    let lines;
+    let detected = false;
+    try { lines = readJsonLines(file); } catch { continue; }
+    for (const evt of lines){
+      const usage = evt?.usage || evt?.message?.usage;
+      const total = usage?.totalTokens || 0;
+      if (!total) continue;
+
+      const day = isoDate(evt?.timestamp || evt?.ts);
+      if (!day || !daysSet.has(day)) continue;
+      detected = true;
+
+      byDayJob[day] ||= {};
+      byDayJob[day][jobId] = (byDayJob[day][jobId]||0)+total;
+    }
+
+    if (!detected) { byDayJob['unknown'] ||= {}; byDayJob['unknown'][jobId] = (byDayJob['unknown'][jobId]||0) + 1; }    let events;
     try { events = readJsonLines(file); } catch { continue; }
     for (const evt of events){
       const usage = evt?.usage || evt?.message?.usage;
       const total = usage?.totalTokens || 0;
       if (!total) continue;
+
+      // Unattributed bucket if missing usage
+      if (!usage && total) {
+        byDayJob[day]['unknown'] = (byDayJob[day]['unknown']||0)+total;
+      }
       const day = isoDate(evt?.timestamp || evt?.ts);
       if (!day || !daysSet.has(day)) continue;
 

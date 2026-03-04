@@ -363,6 +363,9 @@ async function main(){
 
   // Cron totals
   const cronTotals = {};
+  const unknownStats = cronByDay['unknown'] || {};
+  const unknownCount = Object.keys(unknownStats).length;
+
   for(const [day, jobs] of Object.entries(cronByDay||{})){
     for(const [jobId, tok] of Object.entries(jobs||{})){
       cronTotals[jobId] = (cronTotals[jobId]||0) + tok;
@@ -370,6 +373,8 @@ async function main(){
   }
   const cronRows = Object.entries(cronTotals).sort((a,b)=>b[1]-a[1]).slice(0,20)
     .map(([jobId,tokens])=>({jobId,tokens}));
+
+  if (unknownCount) cronRows.push({jobId: 'unknown', tokens: unknownCount});
 
   renderHorizontalBarChart(
     document.getElementById('chartCron'),
