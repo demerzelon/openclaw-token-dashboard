@@ -15,6 +15,7 @@ Outputs:
   data/agents_daily_5d.json
   data/cron_daily_5d.json
   data/top_files_50.json
+  data/session_boot_5d.json
   data/workspace_roots.json
   data/workspace_tree/<rootId>.json
 
@@ -232,6 +233,137 @@ function aggregateUsageCron(){
   return { byDayJob };
 }
 
+function estimateSessionBootCosts(){
+  // Use activity.jsonl / command:new timestamps, then find first assistant usage after that timestamp
+  const daysSet = lastNDaysSet(WINDOW_DAYS);
+  const activityPath = path.join(OPENCLAW_DIR, 'activity.jsonl');
+  if (!exists(activityPath)) return { events: [], stats: {} };
+
+  const activity = readJsonLines(activityPath);
+  const newCmds = activity.filter(e => e?.type === 'command' && e?.action === 'new' && e?.status === 'success');
+
+  // Pre-index session files by agent + topic
+  const sessionsRoot = path.join(OPENCLAW_DIR, 'agents');
+  const sessionFiles = listFilesRecursive(sessionsRoot, {
+    exts: ['.jsonl'],
+    skipDirs: ['node_modules', '.git'],
+    include: (p)=>p.includes(`${path.sep}sessions${path.sep}`)
+  });
+
+  const index = new Map(); // key: agent|topic -> [files]
+  for (const f of sessionFiles){
+    // .../agents/<agent>/sessions/<uuid>-topic-38.jsonl (or .jsonl.reset...)
+    const parts = f.split(path.sep);
+    const ai = parts.lastIndexOf('agents');
+    const agent = ai>=0 ? parts[ai+1] : 'unknown';
+    const m = f.match(/topic-(\d+)\.jsonl/);
+    const topic = m ? m[1] : null;
+    if (!topic) continue;
+    const key = `${agent}|${topic}`;
+    const arr = index.get(key) || [];
+    arr.push(f);
+    index.set(key, arr);
+  }
+  for (const [k, arr] of index.entries()){
+    // sort newest first by mtime
+    arr.sort((a,b)=>{
+      try { return fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs; } catch { return 0; }
+    });
+    index.set(k, arr);
+  }
+
+  const results = [];
+
+  for (const cmd of newCmds){
+    const day = isoDate(cmd.ts);
+    if (!day || !daysSet.has(day)) continue;
+
+    const sessionKey = cmd.sessionKey || '';
+    const agentMatch = sessionKey.match(/^agent:([^:]+)/);
+    const agent = agentMatch ? agentMatch[1] : 'unknown';
+    const topicMatch = sessionKey.match(/topic:(\d+)/);
+    const topic = topicMatch ? topicMatch[1] : null;
+    if (!topic) continue;
+
+    const files = index.get(`${agent}|${topic}`) || [];
+    if (!files.length) continue;
+
+    const cmdTime = new Date(cmd.ts).getTime();
+
+    // Find first assistant message after cmd.ts across candidate files (newest-first)
+    let boot = null;
+    let chosen = null;
+    for (const candidate of files){
+      let events;
+      try { events = readJsonLines(candidate); } catch { continue; }
+
+      for (const evt of events){
+        if (evt?.type !== 'message') continue;
+        const role = evt?.message?.role;
+        if (role !== 'assistant') continue;
+        const t = new Date(evt.timestamp).getTime();
+        if (Number.isNaN(t)) continue;
+        if (t < cmdTime) continue;
+        const usage = evt?.usage || evt?.message?.usage;
+        const total = usage?.totalTokens || 0;
+        if (!total) continue;
+        const model = evt?.model || evt?.message?.model || 'unknown';
+        boot = { totalTokens: total, model, at: evt.timestamp };
+        chosen = candidate;
+        break;
+      }
+      if (boot) break;
+    }
+
+    if (!boot) continue;
+
+    results.push({
+      day,
+      agent,
+      topic: Number(topic),
+      sessionKey,
+      commandAtMs: cmd.ts,
+      model: boot.model,
+      bootTokens: boot.totalTokens
+    });
+  }
+
+  // stats: by model p50/p90
+  function quantile(arr, q){
+    if (!arr.length) return null;
+    const a = [...arr].sort((x,y)=>x-y);
+    const pos = (a.length - 1) * q;
+    const base = Math.floor(pos);
+    const rest = pos - base;
+    return a[base+1] !== undefined ? a[base] + rest*(a[base+1]-a[base]) : a[base];
+  }
+
+  const byModel = {};
+  for (const r of results){
+    byModel[r.model] ||= [];
+    byModel[r.model].push(r.bootTokens);
+  }
+
+  const statsByModel = {};
+  for (const [m, arr] of Object.entries(byModel)){
+    statsByModel[m] = {
+      count: arr.length,
+      p50: Math.round(quantile(arr, 0.5) || 0),
+      p90: Math.round(quantile(arr, 0.9) || 0)
+    };
+  }
+
+  const all = results.map(r=>r.bootTokens);
+  const stats = {
+    count: all.length,
+    p50: Math.round(quantile(all, 0.5) || 0),
+    p90: Math.round(quantile(all, 0.9) || 0),
+    byModel: statsByModel
+  };
+
+  return { events: results, stats };
+}
+
 function writeJson(rel, obj){
   const outPath = path.join(OUT_DIR, rel);
   ensureDir(path.dirname(outPath));
@@ -288,10 +420,13 @@ function main(){
     estimators: { fileTokens: 'chars/4 heuristic' }
   });
 
+  const boot = estimateSessionBootCosts();
+
   writeJson('models_daily_5d.json', usage.byDayModel);
   writeJson('agents_daily_5d.json', usage.byDayAgent);
   writeJson('cron_daily_5d.json', cron.byDayJob);
   writeJson('top_files_50.json', topFiles);
+  writeJson('session_boot_5d.json', boot);
   writeJson('workspace_roots.json', roots);
 
   console.log('Wrote v2 data files to:', OUT_DIR);

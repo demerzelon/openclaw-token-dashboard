@@ -311,12 +311,13 @@ async function main(){
   const meta = await loadJSON('./data/meta.json');
   document.getElementById('generatedAt').textContent = `Generated: ${meta.generatedAt} · Window: ${meta.windowDays}d · Redaction: ${meta.redaction.mode}`;
 
-  const [byModel, byAgent, cronByDay, topFiles, roots] = await Promise.all([
+  const [byModel, byAgent, cronByDay, topFiles, roots, boot] = await Promise.all([
     loadJSON('./data/models_daily_5d.json'),
     loadJSON('./data/agents_daily_5d.json'),
     loadJSON('./data/cron_daily_5d.json'),
     loadJSON('./data/top_files_50.json'),
-    loadJSON('./data/workspace_roots.json')
+    loadJSON('./data/workspace_roots.json'),
+    loadJSON('./data/session_boot_5d.json')
   ]);
 
   // Charts + interactive legends
@@ -391,6 +392,32 @@ async function main(){
     { label: 'path', key: 'path', render: r => `<code>${escapeHtml(r.path)}</code>` },
     { label: 'tok est', key: 'tokenEst', render: r => formatInt(r.tokenEst) },
     { label: 'bytes', key: 'sizeBytes', render: r => formatInt(r.sizeBytes) }
+  ]);
+
+  // Session boot estimate
+  const bootStats = boot?.stats || { count: 0, p50: 0, p90: 0, byModel: {} };
+  const bootEvents = boot?.events || [];
+
+  document.getElementById('bootSummary').innerHTML = bootStats.count
+    ? `<strong>${formatInt(bootStats.count)}</strong> /new events found · p50 <strong>${formatInt(bootStats.p50)}</strong> tok · p90 <strong>${formatInt(bootStats.p90)}</strong> tok`
+    : `No /new events detected in the last ${meta.windowDays} days (or could not map them to usage).`;
+
+  const bootRows = Object.entries(bootStats.byModel || {})
+    .sort((a,b)=>(b[1].p50||0)-(a[1].p50||0))
+    .slice(0, 12)
+    .map(([model, s]) => ({ model, p50: s.p50, p90: s.p90, count: s.count }));
+
+  renderHorizontalBarChart(
+    document.getElementById('chartBoot'),
+    bootRows.slice(0,10).map(r => ({ label: r.model, value: r.p50 })),
+    { labelKey: 'label', valueKey: 'value', maxBars: 10 }
+  );
+
+  renderListTable(document.getElementById('bootTable'), bootRows, [
+    { label: 'model', key: 'model', render: r => `<code>${escapeHtml(r.model)}</code>` },
+    { label: 'count', key: 'count', render: r => formatInt(r.count) },
+    { label: 'p50', key: 'p50', render: r => formatInt(r.p50) },
+    { label: 'p90', key: 'p90', render: r => formatInt(r.p90) }
   ]);
 
   // Explorer: roots list -> load tree on click

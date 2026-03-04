@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "day": "2026-02-28",
+      "agent": "demrezel",
+      "topic": 1,
+      "sessionKey": "agent:demrezel:telegram:group:-1003557311101:topic:1",
+      "commandAtMs": 1772247123061,
+      "model": "claude-opus-4-6",
+      "bootTokens": 21380
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "p50": 21380,
+    "p90": 21380,
+    "byModel": {
+      "claude-opus-4-6": {
+        "count": 1,
+        "p50": 21380,
+        "p90": 21380
+      }
+    }
+  }
+}

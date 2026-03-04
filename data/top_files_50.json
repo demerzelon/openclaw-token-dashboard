@@ -115,6 +115,11 @@
     "sizeBytes": 7869
   },
   {
+    "path": "/workspaces/token-dashboard/data/workspace_tree/token-dashboard.json",
+    "tokenEst": 1827,
+    "sizeBytes": 7306
+  },
+  {
     "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/huggingface_hub/templates/modelcard_template.md",
     "tokenEst": 1718,
     "sizeBytes": 6870
@@ -133,6 +138,11 @@
     "path": "/workspaces/demrezel/artifacts/reports/2026-02-13-openclaw-operator-playbook.md",
     "tokenEst": 1659,
     "sizeBytes": 6685
+  },
+  {
+    "path": "/workspaces/token-dashboard/data/top_files_50.json",
+    "tokenEst": 1627,
+    "sizeBytes": 6507
   },
   {
     "path": "/workspaces/writing-agent/GHOSTWRITER-HANDOFF-2026-02-12.md",
@@ -163,6 +173,11 @@
     "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/huggingface_hub/templates/datasetcard_template.md",
     "tokenEst": 1376,
     "sizeBytes": 5503
+  },
+  {
+    "path": "/workspaces/token-dashboard/data/workspace_tree/writing-agent.json",
+    "tokenEst": 1292,
+    "sizeBytes": 5168
   },
   {
     "path": "/workspaces/missioncontrol/README.md",
@@ -233,20 +248,5 @@
     "path": "/workspaces/demrezel/eval/scorecard.md",
     "tokenEst": 901,
     "sizeBytes": 3637
-  },
-  {
-    "path": "/workspaces/missioncontrol/CRON_MAP.md",
-    "tokenEst": 896,
-    "sizeBytes": 3591
-  },
-  {
-    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/numpy-2.4.2.dist-info/licenses/numpy/random/LICENSE.md",
-    "tokenEst": 878,
-    "sizeBytes": 3511
-  },
-  {
-    "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/numpy/random/LICENSE.md",
-    "tokenEst": 878,
-    "sizeBytes": 3511
   }
 ]

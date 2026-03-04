@@ -2,22 +2,22 @@
   "name": "token-dashboard",
   "path": "/workspaces/token-dashboard",
   "type": "dir",
-  "sizeBytes": 8476511,
-  "tokenEst": 16091,
+  "sizeBytes": 2504851,
+  "tokenEst": 22122,
   "children": [
     {
       "name": "data",
       "path": "/workspaces/token-dashboard/data",
       "type": "dir",
-      "sizeBytes": 8439798,
-      "tokenEst": 15832,
+      "sizeBytes": 2450704,
+      "tokenEst": 21837,
       "children": [
         {
           "name": "workspace_tree",
           "path": "/workspaces/token-dashboard/data/workspace_tree",
           "type": "dir",
-          "sizeBytes": 2425241,
-          "tokenEst": 15468,
+          "sizeBytes": 2439873,
+          "tokenEst": 19127,
           "children": [
             {
               "name": "missioncontrol.json",
@@ -39,6 +39,20 @@
               "type": "file",
               "sizeBytes": 11915,
               "tokenEst": 2979
+            },
+            {
+              "name": "token-dashboard.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/token-dashboard.json",
+              "type": "file",
+              "sizeBytes": 7306,
+              "tokenEst": 1827
+            },
+            {
+              "name": "writing-agent.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/writing-agent.json",
+              "type": "file",
+              "sizeBytes": 5168,
+              "tokenEst": 1292
             },
             {
               "name": "antseed.json",
@@ -67,6 +81,13 @@
               "type": "file",
               "sizeBytes": 2542,
               "tokenEst": 636
+            },
+            {
+              "name": "twitter.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/twitter.json",
+              "type": "file",
+              "sizeBytes": 2158,
+              "tokenEst": 540
             },
             {
               "name": "polymarket.json",
@@ -106,39 +127,53 @@
           ]
         },
         {
-          "name": "usage_by_day_agent.json",
-          "path": "/workspaces/token-dashboard/data/usage_by_day_agent.json",
+          "name": "top_files_50.json",
+          "path": "/workspaces/token-dashboard/data/top_files_50.json",
+          "type": "file",
+          "sizeBytes": 6507,
+          "tokenEst": 1627
+        },
+        {
+          "name": "workspace_roots.json",
+          "path": "/workspaces/token-dashboard/data/workspace_roots.json",
+          "type": "file",
+          "sizeBytes": 2149,
+          "tokenEst": 538
+        },
+        {
+          "name": "agents_daily_5d.json",
+          "path": "/workspaces/token-dashboard/data/agents_daily_5d.json",
           "type": "file",
           "sizeBytes": 760,
           "tokenEst": 190
         },
         {
-          "name": "usage_by_day_model.json",
-          "path": "/workspaces/token-dashboard/data/usage_by_day_model.json",
+          "name": "models_daily_5d.json",
+          "path": "/workspaces/token-dashboard/data/models_daily_5d.json",
           "type": "file",
-          "sizeBytes": 691,
+          "sizeBytes": 692,
           "tokenEst": 173
         },
         {
-          "name": "cron_by_day_job.json",
-          "path": "/workspaces/token-dashboard/data/cron_by_day_job.json",
+          "name": "session_boot_5d.json",
+          "path": "/workspaces/token-dashboard/data/session_boot_5d.json",
+          "type": "file",
+          "sizeBytes": 468,
+          "tokenEst": 117
+        },
+        {
+          "name": "meta.json",
+          "path": "/workspaces/token-dashboard/data/meta.json",
+          "type": "file",
+          "sizeBytes": 253,
+          "tokenEst": 64
+        },
+        {
+          "name": "cron_daily_5d.json",
+          "path": "/workspaces/token-dashboard/data/cron_daily_5d.json",
           "type": "file",
           "sizeBytes": 2,
           "tokenEst": 1
-        },
-        {
-          "name": "context_tree.json",
-          "path": "/workspaces/token-dashboard/data/context_tree.json",
-          "type": "file",
-          "sizeBytes": 2910099,
-          "tokenEst": null
-        },
-        {
-          "name": "dashboard.json",
-          "path": "/workspaces/token-dashboard/data/dashboard.json",
-          "type": "file",
-          "sizeBytes": 3103005,
-          "tokenEst": null
         }
       ]
     },
@@ -146,14 +181,14 @@
       "name": "src",
       "path": "/workspaces/token-dashboard/src",
       "type": "dir",
-      "sizeBytes": 17839,
+      "sizeBytes": 22087,
       "tokenEst": 0,
       "children": [
         {
           "name": "generate-data-v2.js",
           "path": "/workspaces/token-dashboard/src/generate-data-v2.js",
           "type": "file",
-          "sizeBytes": 8925,
+          "sizeBytes": 13173,
           "tokenEst": null
         },
         {
@@ -169,14 +204,14 @@
       "name": "README.md",
       "path": "/workspaces/token-dashboard/README.md",
       "type": "file",
-      "sizeBytes": 1040,
-      "tokenEst": 259
+      "sizeBytes": 1143,
+      "tokenEst": 285
     },
     {
       "name": "app-v2.js",
       "path": "/workspaces/token-dashboard/app-v2.js",
       "type": "file",
-      "sizeBytes": 7398,
+      "sizeBytes": 18266,
       "tokenEst": null
     },
     {
@@ -190,14 +225,14 @@
       "name": "index.html",
       "path": "/workspaces/token-dashboard/index.html",
       "type": "file",
-      "sizeBytes": 1658,
+      "sizeBytes": 2561,
       "tokenEst": null
     },
     {
       "name": "style.css",
       "path": "/workspaces/token-dashboard/style.css",
       "type": "file",
-      "sizeBytes": 2332,
+      "sizeBytes": 3644,
       "tokenEst": null
     }
   ]

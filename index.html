@@ -49,14 +49,22 @@
       </div>
     </section>
 
-    <section class="card">
-      <h2>Context explorer</h2>
-      <p class="hint">
-        Redacted paths. Token estimates use a rough heuristic (~chars/4). No file contents are published.
-      </p>
-      <div class="explorer">
-        <div id="tree"></div>
-        <div id="detail" class="detail">Select a file/folder…</div>
+    <section class="grid">
+      <div class="card">
+        <h2>Session boot cost (estimate)</h2>
+        <div id="bootSummary" class="hint"></div>
+        <div id="chartBoot" class="chart"></div>
+        <div id="bootTable" class="table"></div>
+      </div>
+      <div class="card">
+        <h2>Context explorer</h2>
+        <p class="hint">
+          Redacted paths. Token estimates use a rough heuristic (~chars/4). No file contents are published.
+        </p>
+        <div class="explorer">
+          <div id="tree"></div>
+          <div id="detail" class="detail">Select a file/folder…</div>
+        </div>
       </div>
     </section>
   </main>

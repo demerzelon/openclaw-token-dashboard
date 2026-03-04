@@ -14,18 +14,18 @@
     "tokenEst": 33212
   },
   {
+    "id": "token-dashboard",
+    "name": "token-dashboard",
+    "path": "/workspaces/token-dashboard",
+    "sizeBytes": 2504851,
+    "tokenEst": 22122
+  },
+  {
     "id": "planner",
     "name": "planner",
     "path": "/workspaces/planner",
     "sizeBytes": 344745,
     "tokenEst": 20362
-  },
-  {
-    "id": "token-dashboard",
-    "name": "token-dashboard",
-    "path": "/workspaces/token-dashboard",
-    "sizeBytes": 8476511,
-    "tokenEst": 16091
   },
   {
     "id": "writing-agent",
