@@ -2,8 +2,8 @@
   "name": "demrezel",
   "path": "/workspaces/demrezel",
   "type": "dir",
-  "sizeBytes": 342063440,
-  "tokenEst": 95788,
+  "sizeBytes": 342064517,
+  "tokenEst": 96058,
   "children": [
     {
       "name": ".venv-voice-transcribe",
@@ -37620,8 +37620,8 @@
       "name": "memory",
       "path": "/workspaces/demrezel/memory",
       "type": "dir",
-      "sizeBytes": 69859,
-      "tokenEst": 17221,
+      "sizeBytes": 70936,
+      "tokenEst": 17491,
       "children": [
         {
           "name": "2026-02-06-fb-apartment-monitor.md",
@@ -37722,6 +37722,20 @@
           "tokenEst": 187
         },
         {
+          "name": "2026-03-05.md",
+          "path": "/workspaces/demrezel/memory/2026-03-05.md",
+          "type": "file",
+          "sizeBytes": 528,
+          "tokenEst": 132
+        },
+        {
+          "name": "2026-03-06.md",
+          "path": "/workspaces/demrezel/memory/2026-03-06.md",
+          "type": "file",
+          "sizeBytes": 363,
+          "tokenEst": 91
+        },
+        {
           "name": "DAILY_TEMPLATE.md",
           "path": "/workspaces/demrezel/memory/DAILY_TEMPLATE.md",
           "type": "file",
@@ -37794,6 +37808,13 @@
         {
           "name": "2026-02-28-0252.md",
           "path": "/workspaces/demrezel/memory/2026-02-28-0252.md",
+          "type": "file",
+          "sizeBytes": 186,
+          "tokenEst": 47
+        },
+        {
+          "name": "2026-03-06-1342.md",
+          "path": "/workspaces/demrezel/memory/2026-03-06-1342.md",
           "type": "file",
           "sizeBytes": 186,
           "tokenEst": 47

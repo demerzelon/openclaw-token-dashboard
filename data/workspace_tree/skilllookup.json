@@ -2,9 +2,282 @@
   "name": "skilllookup",
   "path": "/workspaces/skilllookup",
   "type": "dir",
-  "sizeBytes": 6161,
-  "tokenEst": 1507,
+  "sizeBytes": 186795,
+  "tokenEst": 7016,
   "children": [
+    {
+      "name": "pmresearch",
+      "path": "/workspaces/skilllookup/pmresearch",
+      "type": "dir",
+      "sizeBytes": 129182,
+      "tokenEst": 4606,
+      "children": [
+        {
+          "name": "docs",
+          "path": "/workspaces/skilllookup/pmresearch/docs",
+          "type": "dir",
+          "sizeBytes": 50364,
+          "tokenEst": 1005,
+          "children": [
+            {
+              "name": "README.md",
+              "path": "/workspaces/skilllookup/pmresearch/docs/README.md",
+              "type": "file",
+              "sizeBytes": 2727,
+              "tokenEst": 682
+            },
+            {
+              "name": "notes_gaps.md",
+              "path": "/workspaces/skilllookup/pmresearch/docs/notes_gaps.md",
+              "type": "file",
+              "sizeBytes": 1289,
+              "tokenEst": 323
+            },
+            {
+              "name": ".nojekyll",
+              "path": "/workspaces/skilllookup/pmresearch/docs/.nojekyll",
+              "type": "file",
+              "sizeBytes": 0,
+              "tokenEst": null
+            },
+            {
+              "name": "agg_by_month.csv",
+              "path": "/workspaces/skilllookup/pmresearch/docs/agg_by_month.csv",
+              "type": "file",
+              "sizeBytes": 866,
+              "tokenEst": null
+            },
+            {
+              "name": "agg_by_quarter.csv",
+              "path": "/workspaces/skilllookup/pmresearch/docs/agg_by_quarter.csv",
+              "type": "file",
+              "sizeBytes": 868,
+              "tokenEst": null
+            },
+            {
+              "name": "index.html",
+              "path": "/workspaces/skilllookup/pmresearch/docs/index.html",
+              "type": "file",
+              "sizeBytes": 15636,
+              "tokenEst": null
+            },
+            {
+              "name": "markets_kalshi.csv",
+              "path": "/workspaces/skilllookup/pmresearch/docs/markets_kalshi.csv",
+              "type": "file",
+              "sizeBytes": 18999,
+              "tokenEst": null
+            },
+            {
+              "name": "markets_polymarket.csv",
+              "path": "/workspaces/skilllookup/pmresearch/docs/markets_polymarket.csv",
+              "type": "file",
+              "sizeBytes": 9979,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "out",
+          "path": "/workspaces/skilllookup/pmresearch/out",
+          "type": "dir",
+          "sizeBytes": 34728,
+          "tokenEst": 1005,
+          "children": [
+            {
+              "name": "README.md",
+              "path": "/workspaces/skilllookup/pmresearch/out/README.md",
+              "type": "file",
+              "sizeBytes": 2727,
+              "tokenEst": 682
+            },
+            {
+              "name": "notes_gaps.md",
+              "path": "/workspaces/skilllookup/pmresearch/out/notes_gaps.md",
+              "type": "file",
+              "sizeBytes": 1289,
+              "tokenEst": 323
+            },
+            {
+              "name": "agg_by_month.csv",
+              "path": "/workspaces/skilllookup/pmresearch/out/agg_by_month.csv",
+              "type": "file",
+              "sizeBytes": 866,
+              "tokenEst": null
+            },
+            {
+              "name": "agg_by_quarter.csv",
+              "path": "/workspaces/skilllookup/pmresearch/out/agg_by_quarter.csv",
+              "type": "file",
+              "sizeBytes": 868,
+              "tokenEst": null
+            },
+            {
+              "name": "markets_kalshi.csv",
+              "path": "/workspaces/skilllookup/pmresearch/out/markets_kalshi.csv",
+              "type": "file",
+              "sizeBytes": 18999,
+              "tokenEst": null
+            },
+            {
+              "name": "markets_polymarket.csv",
+              "path": "/workspaces/skilllookup/pmresearch/out/markets_polymarket.csv",
+              "type": "file",
+              "sizeBytes": 9979,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "scripts",
+          "path": "/workspaces/skilllookup/pmresearch/scripts",
+          "type": "dir",
+          "sizeBytes": 33648,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "build_outputs.py",
+              "path": "/workspaces/skilllookup/pmresearch/scripts/build_outputs.py",
+              "type": "file",
+              "sizeBytes": 19222,
+              "tokenEst": null
+            },
+            {
+              "name": "fetch_markets.py",
+              "path": "/workspaces/skilllookup/pmresearch/scripts/fetch_markets.py",
+              "type": "file",
+              "sizeBytes": 1561,
+              "tokenEst": null
+            },
+            {
+              "name": "refresh_q1_2026.py",
+              "path": "/workspaces/skilllookup/pmresearch/scripts/refresh_q1_2026.py",
+              "type": "file",
+              "sizeBytes": 12865,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "WORKLOG.md",
+          "path": "/workspaces/skilllookup/pmresearch/WORKLOG.md",
+          "type": "file",
+          "sizeBytes": 7372,
+          "tokenEst": 1829
+        },
+        {
+          "name": "PROJECT.md",
+          "path": "/workspaces/skilllookup/pmresearch/PROJECT.md",
+          "type": "file",
+          "sizeBytes": 2273,
+          "tokenEst": 568
+        },
+        {
+          "name": "README.md",
+          "path": "/workspaces/skilllookup/pmresearch/README.md",
+          "type": "file",
+          "sizeBytes": 715,
+          "tokenEst": 178
+        },
+        {
+          "name": "requirements.txt",
+          "path": "/workspaces/skilllookup/pmresearch/requirements.txt",
+          "type": "file",
+          "sizeBytes": 82,
+          "tokenEst": 21
+        }
+      ]
+    },
+    {
+      "name": "kpi_markets_research_2026-03-05",
+      "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05",
+      "type": "dir",
+      "sizeBytes": 51452,
+      "tokenEst": 903,
+      "children": [
+        {
+          "name": "out",
+          "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/out",
+          "type": "dir",
+          "sizeBytes": 30587,
+          "tokenEst": 882,
+          "children": [
+            {
+              "name": "README.md",
+              "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/out/README.md",
+              "type": "file",
+              "sizeBytes": 2235,
+              "tokenEst": 559
+            },
+            {
+              "name": "notes_gaps.md",
+              "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/out/notes_gaps.md",
+              "type": "file",
+              "sizeBytes": 1289,
+              "tokenEst": 323
+            },
+            {
+              "name": "agg_by_month.csv",
+              "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/out/agg_by_month.csv",
+              "type": "file",
+              "sizeBytes": 786,
+              "tokenEst": null
+            },
+            {
+              "name": "agg_by_quarter.csv",
+              "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/out/agg_by_quarter.csv",
+              "type": "file",
+              "sizeBytes": 788,
+              "tokenEst": null
+            },
+            {
+              "name": "markets_kalshi.csv",
+              "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/out/markets_kalshi.csv",
+              "type": "file",
+              "sizeBytes": 17465,
+              "tokenEst": null
+            },
+            {
+              "name": "markets_polymarket.csv",
+              "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/out/markets_polymarket.csv",
+              "type": "file",
+              "sizeBytes": 8024,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "scripts",
+          "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/scripts",
+          "type": "dir",
+          "sizeBytes": 20783,
+          "tokenEst": 0,
+          "children": [
+            {
+              "name": "build_outputs.py",
+              "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/scripts/build_outputs.py",
+              "type": "file",
+              "sizeBytes": 19222,
+              "tokenEst": null
+            },
+            {
+              "name": "fetch_markets.py",
+              "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/scripts/fetch_markets.py",
+              "type": "file",
+              "sizeBytes": 1561,
+              "tokenEst": null
+            }
+          ]
+        },
+        {
+          "name": "requirements.txt",
+          "path": "/workspaces/skilllookup/kpi_markets_research_2026-03-05/requirements.txt",
+          "type": "file",
+          "sizeBytes": 82,
+          "tokenEst": 21
+        }
+      ]
+    },
     {
       "name": "memory",
       "path": "/workspaces/skilllookup/memory",

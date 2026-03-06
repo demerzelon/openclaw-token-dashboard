@@ -2,15 +2,15 @@
   "name": "missioncontrol",
   "path": "/workspaces/missioncontrol",
   "type": "dir",
-  "sizeBytes": 17999455,
-  "tokenEst": 33212,
+  "sizeBytes": 18001525,
+  "tokenEst": 33728,
   "children": [
     {
       "name": "memory",
       "path": "/workspaces/missioncontrol/memory",
       "type": "dir",
-      "sizeBytes": 58506,
-      "tokenEst": 14564,
+      "sizeBytes": 60576,
+      "tokenEst": 15080,
       "children": [
         {
           "name": "archive",
@@ -19,6 +19,14 @@
           "sizeBytes": 12632,
           "tokenEst": 3143,
           "children": [
+            {
+              "name": "daily",
+              "path": "/workspaces/missioncontrol/memory/archive/daily",
+              "type": "dir",
+              "sizeBytes": 0,
+              "tokenEst": 0,
+              "children": []
+            },
             {
               "name": "2026-02-12-system-audit.md",
               "path": "/workspaces/missioncontrol/memory/archive/2026-02-12-system-audit.md",
@@ -81,8 +89,8 @@
           "name": "reference",
           "path": "/workspaces/missioncontrol/memory/reference",
           "type": "dir",
-          "sizeBytes": 8997,
-          "tokenEst": 2248,
+          "sizeBytes": 9482,
+          "tokenEst": 2369,
           "children": [
             {
               "name": "skills.md",
@@ -95,8 +103,8 @@
               "name": "lessons.md",
               "path": "/workspaces/missioncontrol/memory/reference/lessons.md",
               "type": "file",
-              "sizeBytes": 2740,
-              "tokenEst": 683
+              "sizeBytes": 3225,
+              "tokenEst": 804
             },
             {
               "name": "model-routing.md",
@@ -111,8 +119,8 @@
           "name": "daily",
           "path": "/workspaces/missioncontrol/memory/daily",
           "type": "dir",
-          "sizeBytes": 2406,
-          "tokenEst": 599,
+          "sizeBytes": 3802,
+          "tokenEst": 947,
           "children": [
             {
               "name": "2026-03-01.md",
@@ -122,25 +130,39 @@
               "tokenEst": 535
             },
             {
-              "name": "2026-03-02.md",
-              "path": "/workspaces/missioncontrol/memory/daily/2026-03-02.md",
+              "name": "2026-03-05.md",
+              "path": "/workspaces/missioncontrol/memory/daily/2026-03-05.md",
               "type": "file",
-              "sizeBytes": 107,
-              "tokenEst": 26
+              "sizeBytes": 703,
+              "tokenEst": 174
             },
             {
-              "name": "2026-03-04.md",
-              "path": "/workspaces/missioncontrol/memory/daily/2026-03-04.md",
+              "name": "2026-03-06.md",
+              "path": "/workspaces/missioncontrol/memory/daily/2026-03-06.md",
               "type": "file",
-              "sizeBytes": 106,
-              "tokenEst": 26
+              "sizeBytes": 390,
+              "tokenEst": 98
             },
             {
               "name": "2026-03-03.md",
               "path": "/workspaces/missioncontrol/memory/daily/2026-03-03.md",
               "type": "file",
-              "sizeBytes": 47,
-              "tokenEst": 12
+              "sizeBytes": 227,
+              "tokenEst": 57
+            },
+            {
+              "name": "2026-03-04.md",
+              "path": "/workspaces/missioncontrol/memory/daily/2026-03-04.md",
+              "type": "file",
+              "sizeBytes": 229,
+              "tokenEst": 57
+            },
+            {
+              "name": "2026-03-02.md",
+              "path": "/workspaces/missioncontrol/memory/daily/2026-03-02.md",
+              "type": "file",
+              "sizeBytes": 107,
+              "tokenEst": 26
             }
           ]
         },
@@ -201,15 +223,15 @@
           "name": "INDEX.md",
           "path": "/workspaces/missioncontrol/memory/INDEX.md",
           "type": "file",
-          "sizeBytes": 1496,
-          "tokenEst": 373
+          "sizeBytes": 1620,
+          "tokenEst": 404
         },
         {
           "name": "WORKING.md",
           "path": "/workspaces/missioncontrol/memory/WORKING.md",
           "type": "file",
-          "sizeBytes": 960,
-          "tokenEst": 236
+          "sizeBytes": 1025,
+          "tokenEst": 252
         },
         {
           "name": "2026-02-13.md",

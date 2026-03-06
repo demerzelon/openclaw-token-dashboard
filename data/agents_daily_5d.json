@@ -1,22 +1,18 @@
 {
-  "2026-03-01": {
-    "planner": 11556,
-    "missioncontrol": 3679595,
-    "executive-assistant": 191269,
-    "demrezel": 2570814,
-    "antseed": 212121
+  "2026-03-05": {
+    "skilllookup": 5507407,
+    "planner": 49963,
+    "missioncontrol": 743098,
+    "executive-assistant": 86808,
+    "demrezel": 4231373,
+    "antseed": 1644378
   },
   "2026-03-04": {
-    "planner": 10674008,
-    "missioncontrol": 187918,
+    "planner": 11873062,
+    "missioncontrol": 486249,
     "executive-assistant": 143539,
-    "demrezel": 5648128,
+    "demrezel": 6000898,
     "antseed": 38926
-  },
-  "2026-02-28": {
-    "planner": 11554,
-    "executive-assistant": 163186,
-    "demrezel": 3691516
   },
   "2026-03-02": {
     "planner": 62506,
@@ -25,6 +21,12 @@
     "executive-assistant": 122410,
     "demrezel": 3130576,
     "antseed": 1598549
+  },
+  "2026-03-06": {
+    "planner": 270722,
+    "missioncontrol": 110276,
+    "executive-assistant": 25838,
+    "demrezel": 2567804
   },
   "2026-03-03": {
     "planner": 100609,

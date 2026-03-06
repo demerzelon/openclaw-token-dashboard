@@ -3,22 +3,22 @@
     "id": "demrezel",
     "name": "demrezel",
     "path": "/workspaces/demrezel",
-    "sizeBytes": 342063440,
-    "tokenEst": 95788
+    "sizeBytes": 342064517,
+    "tokenEst": 96058
   },
   {
     "id": "missioncontrol",
     "name": "missioncontrol",
     "path": "/workspaces/missioncontrol",
-    "sizeBytes": 17999455,
-    "tokenEst": 33212
+    "sizeBytes": 18001525,
+    "tokenEst": 33728
   },
   {
     "id": "token-dashboard",
     "name": "token-dashboard",
     "path": "/workspaces/token-dashboard",
-    "sizeBytes": 2505389,
-    "tokenEst": 22122
+    "sizeBytes": 2518361,
+    "tokenEst": 24886
   },
   {
     "id": "planner",
@@ -33,6 +33,13 @@
     "path": "/workspaces/writing-agent",
     "sizeBytes": 52899,
     "tokenEst": 13085
+  },
+  {
+    "id": "skilllookup",
+    "name": "skilllookup",
+    "path": "/workspaces/skilllookup",
+    "sizeBytes": 186795,
+    "tokenEst": 7016
   },
   {
     "id": "twitter",
@@ -61,13 +68,6 @@
     "path": "/workspaces/antseed",
     "sizeBytes": 15891,
     "tokenEst": 2764
-  },
-  {
-    "id": "skilllookup",
-    "name": "skilllookup",
-    "path": "/workspaces/skilllookup",
-    "sizeBytes": 6161,
-    "tokenEst": 1507
   },
   {
     "id": "polymarket",

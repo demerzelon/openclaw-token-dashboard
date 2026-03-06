@@ -2,29 +2,29 @@
   "name": "token-dashboard",
   "path": "/workspaces/token-dashboard",
   "type": "dir",
-  "sizeBytes": 2505389,
-  "tokenEst": 22122,
+  "sizeBytes": 2518361,
+  "tokenEst": 24886,
   "children": [
     {
       "name": "data",
       "path": "/workspaces/token-dashboard/data",
       "type": "dir",
-      "sizeBytes": 2450706,
-      "tokenEst": 21837,
+      "sizeBytes": 2462363,
+      "tokenEst": 24601,
       "children": [
         {
           "name": "workspace_tree",
           "path": "/workspaces/token-dashboard/data/workspace_tree",
           "type": "dir",
-          "sizeBytes": 2439875,
-          "tokenEst": 19127,
+          "sizeBytes": 2450166,
+          "tokenEst": 21549,
           "children": [
             {
               "name": "missioncontrol.json",
               "path": "/workspaces/token-dashboard/data/workspace_tree/missioncontrol.json",
               "type": "file",
-              "sizeBytes": 16594,
-              "tokenEst": 4149
+              "sizeBytes": 17323,
+              "tokenEst": 4331
             },
             {
               "name": ".git.json",
@@ -39,6 +39,13 @@
               "type": "file",
               "sizeBytes": 11915,
               "tokenEst": 2979
+            },
+            {
+              "name": "skilllookup.json",
+              "path": "/workspaces/token-dashboard/data/workspace_tree/skilllookup.json",
+              "type": "file",
+              "sizeBytes": 11737,
+              "tokenEst": 2935
             },
             {
               "name": "token-dashboard.json",
@@ -60,13 +67,6 @@
               "type": "file",
               "sizeBytes": 4097,
               "tokenEst": 1025
-            },
-            {
-              "name": "skilllookup.json",
-              "path": "/workspaces/token-dashboard/data/workspace_tree/skilllookup.json",
-              "type": "file",
-              "sizeBytes": 2780,
-              "tokenEst": 695
             },
             {
               "name": "opsreports.json",
@@ -121,7 +121,7 @@
               "name": "demrezel.json",
               "path": "/workspaces/token-dashboard/data/workspace_tree/demrezel.json",
               "type": "file",
-              "sizeBytes": 2363383,
+              "sizeBytes": 2363988,
               "tokenEst": null
             }
           ]
@@ -141,11 +141,18 @@
           "tokenEst": 538
         },
         {
+          "name": "cron_daily_5d.json",
+          "path": "/workspaces/token-dashboard/data/cron_daily_5d.json",
+          "type": "file",
+          "sizeBytes": 1243,
+          "tokenEst": 311
+        },
+        {
           "name": "agents_daily_5d.json",
           "path": "/workspaces/token-dashboard/data/agents_daily_5d.json",
           "type": "file",
-          "sizeBytes": 760,
-          "tokenEst": 190
+          "sizeBytes": 761,
+          "tokenEst": 191
         },
         {
           "name": "models_daily_5d.json",
@@ -158,8 +165,8 @@
           "name": "session_boot_5d.json",
           "path": "/workspaces/token-dashboard/data/session_boot_5d.json",
           "type": "file",
-          "sizeBytes": 468,
-          "tokenEst": 117
+          "sizeBytes": 592,
+          "tokenEst": 148
         },
         {
           "name": "meta.json",
@@ -167,13 +174,6 @@
           "type": "file",
           "sizeBytes": 253,
           "tokenEst": 64
-        },
-        {
-          "name": "cron_daily_5d.json",
-          "path": "/workspaces/token-dashboard/data/cron_daily_5d.json",
-          "type": "file",
-          "sizeBytes": 2,
-          "tokenEst": 1
         }
       ]
     },
@@ -181,14 +181,14 @@
       "name": "src",
       "path": "/workspaces/token-dashboard/src",
       "type": "dir",
-      "sizeBytes": 22623,
+      "sizeBytes": 23414,
       "tokenEst": 0,
       "children": [
         {
           "name": "generate-data-v2.js",
           "path": "/workspaces/token-dashboard/src/generate-data-v2.js",
           "type": "file",
-          "sizeBytes": 13709,
+          "sizeBytes": 14500,
           "tokenEst": null
         },
         {
@@ -211,7 +211,7 @@
       "name": "app-v2.js",
       "path": "/workspaces/token-dashboard/app-v2.js",
       "type": "file",
-      "sizeBytes": 18266,
+      "sizeBytes": 18790,
       "tokenEst": null
     },
     {

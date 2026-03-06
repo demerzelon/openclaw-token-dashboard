@@ -35,14 +35,14 @@
     "sizeBytes": 19789
   },
   {
+    "path": "/workspaces/token-dashboard/data/workspace_tree/missioncontrol.json",
+    "tokenEst": 4331,
+    "sizeBytes": 17323
+  },
+  {
     "path": "/workspaces/missioncontrol/memory/2026-02-14-access-matrix.md",
     "tokenEst": 4156,
     "sizeBytes": 16768
-  },
-  {
-    "path": "/workspaces/token-dashboard/data/workspace_tree/missioncontrol.json",
-    "tokenEst": 4149,
-    "sizeBytes": 16594
   },
   {
     "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/setuptools/config/setuptools.schema.json",
@@ -85,6 +85,11 @@
     "sizeBytes": 11915
   },
   {
+    "path": "/workspaces/token-dashboard/data/workspace_tree/skilllookup.json",
+    "tokenEst": 2935,
+    "sizeBytes": 11737
+  },
+  {
     "path": "/workspaces/demrezel/.venv-voice-transcribe/lib/python3.14/site-packages/pip-26.0.1.dist-info/licenses/AUTHORS.txt",
     "tokenEst": 2911,
     "sizeBytes": 11731
@@ -113,6 +118,11 @@
     "path": "/workspaces/summarizer/AGENTS.md",
     "tokenEst": 1952,
     "sizeBytes": 7869
+  },
+  {
+    "path": "/workspaces/skilllookup/pmresearch/WORKLOG.md",
+    "tokenEst": 1829,
+    "sizeBytes": 7372
   },
   {
     "path": "/workspaces/token-dashboard/data/workspace_tree/token-dashboard.json",
@@ -238,15 +248,5 @@
     "path": "/workspaces/missioncontrol/memory/2026-02-15-system-review.md",
     "tokenEst": 929,
     "sizeBytes": 3730
-  },
-  {
-    "path": "/workspaces/demrezel/skills/openclaw-deck-tracker/SKILL.md",
-    "tokenEst": 920,
-    "sizeBytes": 3690
-  },
-  {
-    "path": "/workspaces/demrezel/eval/scorecard.md",
-    "tokenEst": 901,
-    "sizeBytes": 3637
   }
 ]

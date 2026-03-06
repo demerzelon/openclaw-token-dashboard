@@ -1,24 +1,24 @@
 {
   "events": [
     {
-      "day": "2026-02-28",
+      "day": "2026-03-06",
       "agent": "demrezel",
       "topic": 1,
       "sessionKey": "agent:demrezel:telegram:group:-1003557311101:topic:1",
-      "commandAtMs": 1772247123061,
-      "model": "claude-opus-4-6",
-      "bootTokens": 21380
+      "commandAtMs": 1772804554772,
+      "model": "claude-opus-4-5",
+      "bootTokens": 21759
     }
   ],
   "stats": {
     "count": 1,
-    "p50": 21380,
-    "p90": 21380,
+    "p50": 21759,
+    "p90": 21759,
     "byModel": {
-      "claude-opus-4-6": {
+      "claude-opus-4-5": {
         "count": 1,
-        "p50": 21380,
-        "p90": 21380
+        "p50": 21759,
+        "p90": 21759
       }
     }
   },
